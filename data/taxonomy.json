@@ -1,37 +1,208 @@
 {
  "Claude Code": [
-  {"name": "Hooks & guardrails", "keywords": ["hook", "exit code", "stop hook", "onfailure", "confirmation"]},
-  {"name": "Commands & settings", "keywords": ["/doctor", "slash", "command", "setting", "/tasks", "/loop"]},
-  {"name": "Code Mode & tool use", "keywords": ["code mode", "tool call", "javascript", "chain"]},
-  {"name": "Desktop, themes & simulators", "keywords": ["desktop", "theme", "mod", "simulator", "iphone", "release channel"]},
-  {"name": "Model choice & cost", "keywords": ["opus", "fable", "mythos", "advisor", "cost", "daily driver"]},
-  {"name": "Releases & changelog", "keywords": ["release", "2.1.", "changelog"]}
+  {
+   "name": "Hooks & guardrails",
+   "keywords": [
+    "hook",
+    "exit code",
+    "stop hook",
+    "onfailure",
+    "confirmation"
+   ]
+  },
+  {
+   "name": "Commands & settings",
+   "keywords": [
+    "/doctor",
+    "slash",
+    "command",
+    "setting",
+    "/tasks",
+    "/loop"
+   ]
+  },
+  {
+   "name": "Code Mode & tool use",
+   "keywords": [
+    "code mode",
+    "tool call",
+    "javascript",
+    "chain"
+   ]
+  },
+  {
+   "name": "Desktop, themes & simulators",
+   "keywords": [
+    "desktop",
+    "theme",
+    "mod",
+    "simulator",
+    "iphone",
+    "release channel"
+   ]
+  },
+  {
+   "name": "Model choice & cost",
+   "keywords": [
+    "opus",
+    "fable",
+    "mythos",
+    "advisor",
+    "cost",
+    "daily driver"
+   ]
+  },
+  {
+   "name": "Releases & changelog",
+   "keywords": [
+    "release",
+    "2.1.",
+    "changelog"
+   ]
+  }
  ],
  "Subagents, skills & plugins": [
-  {"name": "Subagents", "keywords": ["subagent", "agent", "npx claude-code-templates"]},
-  {"name": "Skills", "keywords": ["skill", "compatib"]},
-  {"name": "Plugins, MCP & marketplace", "keywords": ["plugin", "marketplace", "mcp", "directory"]}
+  {
+   "name": "Subagents",
+   "keywords": [
+    "subagent",
+    "agent",
+    "npx claude-code-templates"
+   ]
+  },
+  {
+   "name": "Skills",
+   "keywords": [
+    "skill",
+    "compatib"
+   ]
+  },
+  {
+   "name": "Plugins, MCP & marketplace",
+   "keywords": [
+    "plugin",
+    "marketplace",
+    "mcp",
+    "directory"
+   ]
+  }
  ],
  "Projects & cloud sessions": [
-  {"name": "Projects", "keywords": ["project", "coordinator", "thread"]},
-  {"name": "Long-running cloud sessions", "keywords": ["cloud session", "restart", "checkpoint", "resume"]}
+  {
+   "name": "Projects",
+   "keywords": [
+    "project",
+    "coordinator",
+    "thread"
+   ]
+  },
+  {
+   "name": "Long-running cloud sessions",
+   "keywords": [
+    "cloud session",
+    "restart",
+    "checkpoint",
+    "resume"
+   ]
+  }
  ],
  "Claude apps": [
-  {"name": "Meetings", "keywords": ["meeting", "call"]},
-  {"name": "Desktop apps & artifacts", "keywords": ["artifact", "canvas", "desktop app"]},
-  {"name": "Chat & permissions", "keywords": ["auto mode", "permission", "refuse"]}
+  {
+   "name": "Meetings",
+   "keywords": [
+    "meeting",
+    "call"
+   ]
+  },
+  {
+   "name": "Desktop apps & artifacts",
+   "keywords": [
+    "artifact",
+    "canvas",
+    "desktop app"
+   ]
+  },
+  {
+   "name": "Chat & permissions",
+   "keywords": [
+    "auto mode",
+    "permission",
+    "refuse"
+   ]
+  }
  ],
  "Prompting & context": [
-  {"name": "Closing context gaps", "keywords": ["context", "missing"]}
+  {
+   "name": "Closing context gaps",
+   "keywords": [
+    "context",
+    "missing"
+   ]
+  }
  ],
  "Claude API & platform": [
-  {"name": "Auth & billing", "keywords": ["oauth", "billing", "api key", "billing_policy"]},
-  {"name": "Managed Agents", "keywords": ["managed agents", "self-hosted", "harness"]},
-  {"name": "Model upgrades", "keywords": ["upgrade", "new model", "cost per task"]}
+  {
+   "name": "Auth & billing",
+   "keywords": [
+    "oauth",
+    "billing",
+    "api key",
+    "billing_policy"
+   ]
+  },
+  {
+   "name": "Managed Agents",
+   "keywords": [
+    "managed agents",
+    "self-hosted",
+    "harness"
+   ]
+  },
+  {
+   "name": "Caching & cost",
+   "keywords": [
+    "cache",
+    "caching",
+    "cost"
+   ]
+  },
+  {
+   "name": "Model upgrades",
+   "keywords": [
+    "upgrade",
+    "new model",
+    "cost per task"
+   ]
+  }
  ],
  "Verification & security": [
-  {"name": "Verification", "keywords": ["verify", "verification", "test", "benchmark"]},
-  {"name": "Sandboxing", "keywords": ["sandbox", "webassembly", "qemu", "container"]},
-  {"name": "Security programs", "keywords": ["cyber", "vulnerab", "disclosure", "oss scanner", "defense"]}
+  {
+   "name": "Verification",
+   "keywords": [
+    "verify",
+    "verification",
+    "test",
+    "benchmark"
+   ]
+  },
+  {
+   "name": "Sandboxing",
+   "keywords": [
+    "sandbox",
+    "webassembly",
+    "qemu",
+    "container"
+   ]
+  },
+  {
+   "name": "Security programs",
+   "keywords": [
+    "cyber",
+    "vulnerab",
+    "disclosure",
+    "oss scanner",
+    "defense"
+   ]
+  }
  ]
 }

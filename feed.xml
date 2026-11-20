@@ -5,8 +5,66 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-19T21:51:19-07:00</updated>
+  <updated>2026-11-19T21:59:58-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude apps › Desktop apps &amp; artifacts: HTML-in-Canvas experiments in Claude&#x27;s desktop apps (demo)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493"/>
+    <link rel="related" href="https://x.com/felixrieseberg/status/2122036839238492493"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493</id>
+    <published>2026-11-15T18:39:42Z</published>
+    <updated>2026-11-19T21:59:58-07:00</updated>
+    <author><name>@felixrieseberg</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>Montage of interactive web experiments Claude built with HTML-in-Canvas (black-hole text, shattering glass, 3D charts, a Rubik&#x27;s cube, water physics). Ends with the announcement that HTML-in-Canvas is now in Claude for macOS, Windows and Linux.
+• HTML-in-Canvas in the desktop apps: HTML-in-Canvas is now enabled in Claude&#x27;s desktop apps, so Claude can build unusual, Flash-era-style sites. Demo artifact linked in the post.
+• 0:56 HTML-in-Canvas on every desktop platform: HTML-in-Canvas is available in Claude for macOS, Windows and Linux. (Source: https://x.com/felixrieseberg/status/2122036839238492493)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Snow theme that reacts to your context window (demo)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810"/>
+    <link rel="related" href="https://x.com/lydiahallie/status/2122028598639136810"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810</id>
+    <published>2026-11-15T18:06:57Z</published>
+    <updated>2026-11-19T21:59:58-07:00</updated>
+    <author><name>@lydiahallie</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>A Claude Code session in a winter-cabin theme where snow builds up as context fills. Mostly demo prompts; one usable tip about /compact.
+• Themes can react to your session: Because custom themes are mods, the background can react to your actual session. Example: Claude made it snow as the context window fills up, with the mod hooking into `turn.step`.
+• 0:12 Tell /compact what to keep: `/compact` accepts instructions about what to keep, for example `/compact keep the test notes`. (Source: https://x.com/lydiahallie/status/2122028598639136810)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Custom themes and mods for Claude Code desktop (demo)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2121392666244186327"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327</id>
+    <published>2026-11-13T23:59:59Z</published>
+    <updated>2026-11-19T21:59:58-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>Showcase of Claude Code desktop themes and mods: applying a prebuilt theme, the mod theme API, asking Claude for a theme in plain language, mods that react to events, and the theme-examples plugin.
+• Build custom themes with mods: Claude Code on desktop supports custom themes built with mods: change the colors or add an animated background. Describe the look you want to Claude, or start from the theme-examples plugin.
+• 0:02 Apply a prebuilt theme with /custom-theme: Run `/custom-theme &lt;name&gt;` (the demo uses `honu-lagoon`) to apply a prebuilt theme.
+• 0:18 Set themes from a mod: In the mod API, `$.theme.set({ colors, backdrop })` sets a theme&#x27;s colors and backdrop.
+• 0:21 Describe the theme you want: Ask in plain language, for example &quot;make me a theme with a synthwave sunset and neon pink accents&quot;, and Claude builds it.
+• 0:29 Mods can react to events: Mods can add visual feedback to events, such as fireworks when a PR merges after you say &quot;ship it&quot;.
+• 0:35 Mods docs: The mods documentation lives in the Claude Code docs under Plugins &gt; Mods. (Source: https://x.com/ClaudeDevs/status/2121392666244186327)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Model upgrades: How Anthropic launches new models on the API (ClaudeDevs video)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2120962481225146636"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636</id>
+    <published>2026-11-12T19:30:35Z</published>
+    <updated>2026-11-19T21:59:58-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>@dejno and @luccasiau on keeping API costs down in agentic work: prompt caching across turns, what breaks the cache, and using an evals harness to compare models and settings on cost.
+• Rethink your harness when you upgrade models: When you upgrade to a new model, rethink your harness and measure cost per task. That is the topic of this ClaudeDevs video with @dejno and @luccasiau, who also explain how Anthropic launches new models on its API.
+• 0:08 Lean on prompt caching in agent loops: In agentic turns, follow-up requests that repeat or append to the first request reuse cached blocks, which cuts cost.
+• 0:24 Don&#x27;t change the system prompt or effort mid-conversation: Changing the system prompt or the effort setting partway through a conversation breaks prompt caching.
+• 0:42 Use an evals harness when switching models: Build and tune an evals harness so that when you switch models or adjust settings such as thinking, you can confirm you get the same outcome on a better cost curve. (Source: https://x.com/ClaudeDevs/status/2120962481225146636)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.329 release highlights (unofficial changelog)</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123546030654333070"/>
@@ -201,28 +259,6 @@
     <summary>• Test foldable layouts with iPhone Duo: Claude Code on desktop supports iPhone Duo in the iOS simulator (public beta). Run your app on Duo next to your conversation, and Claude can fold and unfold the device to test each layout. (Source: https://x.com/ClaudeDevs/status/2122439098740674839)</summary>
   </entry>
   <entry>
-    <title>Claude apps › Desktop apps &amp; artifacts: HTML-in-Canvas in the desktop apps</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493"/>
-    <link rel="related" href="https://x.com/felixrieseberg/status/2122036839238492493"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493</id>
-    <published>2026-11-15T18:39:42Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@felixrieseberg</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• HTML-in-Canvas in the desktop apps: HTML-in-Canvas is now enabled in Claude&#x27;s desktop apps, so Claude can build unusual, Flash-era-style sites. Demo artifact linked in the post. (Source: https://x.com/felixrieseberg/status/2122036839238492493)</summary>
-  </entry>
-  <entry>
-    <title>Claude Code › Desktop, themes &amp; simulators: Themes can react to your session</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810"/>
-    <link rel="related" href="https://x.com/lydiahallie/status/2122028598639136810"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810</id>
-    <published>2026-11-15T18:06:57Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@lydiahallie</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Themes can react to your session: Because custom themes are mods, the background can react to your actual session. Example: Claude made it snow as the context window fills up, with the mod hooking into `turn.step`. (Source: https://x.com/lydiahallie/status/2122028598639136810)</summary>
-  </entry>
-  <entry>
     <title>Verification &amp; security › Security programs: Cyber Verification Program unlocks Defense Access</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122012847958007962"/>
     <link rel="related" href="https://x.com/dani_avila7/status/2122012847958007962"/>
@@ -276,17 +312,6 @@
     <author><name>@dani_avila7</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• database-architect subagent for migrations: The rewritten database-architect agent reads your existing schema and migrations, catches locking risks and breaking changes, handles rolling deployments (using lock_timeout and CREATE INDEX CONCURRENTLY) and tests migrations on a temporary database before finishing. In his test (an 80M-row table, a migration needed 10 minutes before deployment), the same prompt scored 6/10 without the agent and 10/10 with it, and Claude picked the agent automatically in all 8 tests. Install: `npx claude-code-templates@latest --agent database/database-architect`. (Source: https://x.com/dani_avila7/status/2121470943314788696)</summary>
-  </entry>
-  <entry>
-    <title>Claude Code › Desktop, themes &amp; simulators: Build custom themes with mods</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327"/>
-    <link rel="related" href="https://x.com/ClaudeDevs/status/2121392666244186327"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327</id>
-    <published>2026-11-13T23:59:59Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@ClaudeDevs</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Build custom themes with mods: Claude Code on desktop supports custom themes built with mods: change the colors or add an animated background. Describe the look you want to Claude, or start from the theme-examples plugin. (Source: https://x.com/ClaudeDevs/status/2121392666244186327)</summary>
   </entry>
   <entry>
     <title>Projects &amp; cloud sessions › Projects: Let the project coordinator run parallel threads</title>
@@ -353,18 +378,6 @@
     <author><name>@claudeai</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• Add Claude to your video calls: Claude Meetings adds Claude to your team&#x27;s video call, where it builds docs, whiteboards and other artifacts with you while you are still talking. Rolling out in beta on Team and Enterprise plans. (Source: https://x.com/claudeai/status/2120973994191094179)</summary>
-  </entry>
-  <entry>
-    <title>Claude API &amp; platform › Model upgrades: How Anthropic launches new models on the API (ClaudeDevs video)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636"/>
-    <link rel="related" href="https://x.com/ClaudeDevs/status/2120962481225146636"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636</id>
-    <published>2026-11-12T19:30:35Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@ClaudeDevs</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Short ClaudeDevs video (about 81 s) with @dejno and @luccasiau on launching new models on the API, rethinking your harness and measuring cost per task. Summary coming once watched.
-• Rethink your harness when you upgrade models: When you upgrade to a new model, rethink your harness and measure cost per task. That is the topic of this ClaudeDevs video with @dejno and @luccasiau, who also explain how Anthropic launches new models on its API. (Source: https://x.com/ClaudeDevs/status/2120962481225146636)</summary>
   </entry>
   <entry>
     <title>Claude API &amp; platform › Managed Agents: Self-host Claude Managed Agents</title>
