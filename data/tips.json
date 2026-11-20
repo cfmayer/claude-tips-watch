@@ -1,0 +1,1149 @@
+{
+ "site": {
+  "title": "Claude Tips Watch",
+  "base_url": "https://cfmayer.github.io/claude-tips-watch/",
+  "tagline": "Searchable reference of Claude and Claude Code tips from 16 accounts on X",
+  "scope_short": "Claude Code, skills and subagents, Projects, Claude apps and the Claude API",
+  "scope_about": "Claude and Anthropic tooling (Claude Code, subagents, skills and plugins, MCP, Projects, the Claude apps, prompting and the Claude API)",
+  "keep_rule": "Claude and Anthropic-tooling",
+  "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
+ },
+ "last_run": "2026-11-19T21:51:19-07:00",
+ "window": {
+  "start": "2026-11-12",
+  "end": "2026-11-19"
+ },
+ "accounts": [
+  "claudeai",
+  "ClaudeDevs",
+  "AnthropicAI",
+  "bcherny",
+  "lydiahallie",
+  "noahzweben",
+  "alexalbert__",
+  "adocomplete",
+  "cjav_dev",
+  "felixrieseberg",
+  "RLanceMartin",
+  "trq212",
+  "ClaudeCodeLog",
+  "dani_avila7",
+  "simonw",
+  "kieranklaassen"
+ ],
+ "runs": [
+  {
+   "at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "window": "2026-11-12/2026-11-19",
+   "tips_added": 39,
+   "sources_added": 34,
+   "source_summaries_updated": 0
+  }
+ ],
+ "tips": [
+  {
+   "id": "x-2121313048820617645",
+   "posted_at": "2026-11-13T18:43:37Z",
+   "author": "lydiahallie",
+   "date": "2026-11-13",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "title": "Make a Stop hook retry with exit code 2",
+   "tip": "A Stop hook can send Claude back to try again when a check fails, but only if the hook exits with code 2. Exit 2 returns Claude to retry with the hook's stderr; exit 1 is non-blocking, so Claude just finishes even though the check failed.",
+   "source_type": "post",
+   "tags": [
+    "hooks"
+   ],
+   "source_url": "https://x.com/lydiahallie/status/2121313048820617645",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121313048820617645"
+  },
+  {
+   "id": "x-2121011733699633613",
+   "posted_at": "2026-11-12T22:46:18Z",
+   "author": "lydiahallie",
+   "date": "2026-11-12",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "title": "Run /doctor prompt-audit",
+   "tip": "Run `/doctor prompt-audit` in each of your Claude Code repos if you haven't yet.",
+   "source_type": "post",
+   "tags": [
+    "commands"
+   ],
+   "source_url": "https://x.com/lydiahallie/status/2121011733699633613",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121011733699633613"
+  },
+  {
+   "id": "x-2122801681939234950",
+   "posted_at": "2026-11-17T21:18:55Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Code Mode & tool use",
+   "title": "Try experimental Code Mode",
+   "tip": "Code Mode is a new, experimental way for Claude Code to work with tools: Claude writes scripts that chain your tools together, and it can answer you while long commands are still running. Opt in with `CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1`.",
+   "source_type": "post",
+   "tags": [
+    "code mode"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2122801681939234950",
+   "related_urls": [
+    "http://code.claude.com/docs/en/code-mode"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122801681939234950"
+  },
+  {
+   "id": "x-2121789088499933223",
+   "posted_at": "2026-11-15T02:15:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-14",
+   "topic": "Claude Code",
+   "subcategory": "Code Mode & tool use",
+   "title": "What Code Mode changes",
+   "tip": "Available experimentally from Claude Code 2.1.325: instead of calling tools one by one, Claude writes JavaScript that runs several tool calls in a single step. It can run commands in parallel, chain operations, and filter results before they are sent back to the model.",
+   "source_type": "post",
+   "tags": [
+    "code mode"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2121789088499933223",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121789088499933223"
+  },
+  {
+   "id": "x-2121392666244186327",
+   "posted_at": "2026-11-13T23:59:59Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-13",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Build custom themes with mods",
+   "tip": "Claude Code on desktop supports custom themes built with mods: change the colors or add an animated background. Describe the look you want to Claude, or start from the theme-examples plugin.",
+   "source_type": "post",
+   "tags": [
+    "desktop",
+    "themes"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2121392666244186327",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121392666244186327"
+  },
+  {
+   "id": "x-2122028598639136810",
+   "posted_at": "2026-11-15T18:06:57Z",
+   "author": "lydiahallie",
+   "date": "2026-11-15",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Themes can react to your session",
+   "tip": "Because custom themes are mods, the background can react to your actual session. Example: Claude made it snow as the context window fills up, with the mod hooking into `turn.step`.",
+   "source_type": "post",
+   "tags": [
+    "desktop",
+    "themes"
+   ],
+   "source_url": "https://x.com/lydiahallie/status/2122028598639136810",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122028598639136810"
+  },
+  {
+   "id": "x-2122821051910684824",
+   "posted_at": "2026-11-17T22:35:53Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Switch Claude Desktop to the Latest release channel",
+   "tip": "To get more frequent Claude Desktop builds on Windows and Mac, switch to the Latest release channel in Settings > Desktop app. Fixes and improvements arrive faster, but these builds can be less reliable than Stable, which stays the default.",
+   "source_type": "post",
+   "tags": [
+    "desktop"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2122821051910684824",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122821051910684824"
+  },
+  {
+   "id": "x-2122439098740674839",
+   "posted_at": "2026-11-16T21:18:08Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-16",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Test foldable layouts with iPhone Duo",
+   "tip": "Claude Code on desktop supports iPhone Duo in the iOS simulator (public beta). Run your app on Duo next to your conversation, and Claude can fold and unfold the device to test each layout.",
+   "source_type": "post",
+   "tags": [
+    "desktop",
+    "ios"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2122439098740674839",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122439098740674839"
+  },
+  {
+   "id": "x-2121076519296450582",
+   "posted_at": "2026-11-13T03:03:44Z",
+   "author": "dani_avila7",
+   "date": "2026-11-12",
+   "topic": "Claude Code",
+   "subcategory": "Model choice & cost",
+   "title": "Opus as the main model, Fable 5.2 as advisor",
+   "tip": "Use Opus as your main model and Fable 5.2 as its advisor in Claude Code. Opus handles every turn; Fable steps in at critical moments: choosing an approach, debugging recurring errors and reviewing work before completion. You get Fable's judgment without paying for Fable on every turn.",
+   "source_type": "post",
+   "tags": [
+    "models",
+    "cost"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2121076519296450582",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121076519296450582"
+  },
+  {
+   "id": "x-2121721387547267498",
+   "posted_at": "2026-11-14T21:46:13Z",
+   "author": "RLanceMartin",
+   "date": "2026-11-14",
+   "topic": "Claude Code",
+   "subcategory": "Model choice & cost",
+   "title": "Opus 5.5 medium as a daily driver",
+   "tip": "Opus 5.5 at medium effort is a fantastic daily driver and baseline. For when to reach for Fable 5.2 instead of Opus 5.5, see the Claude blog's model guidance.",
+   "source_type": "post",
+   "tags": [
+    "models"
+   ],
+   "source_url": "https://x.com/RLanceMartin/status/2121721387547267498",
+   "related_urls": [
+    "https://claude.dev/blog/which-claude-model-should-you-build-with/"
+   ],
+   "credit": "Reply to @garrytan",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121721387547267498"
+  },
+  {
+   "id": "x-2122821446602780783",
+   "posted_at": "2026-11-17T22:37:27Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Confirmations for destructive actions",
+   "tip": "Claude Code 2.1.326 added confirmations for risky destructive actions (git operations, deletes) to reduce accidental data loss.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2122821446602780783",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122821446602780783"
+  },
+  {
+   "id": "x-2122821446602780783-2",
+   "posted_at": "2026-11-17T22:37:27Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Agent-team sessions open in Code Mode",
+   "tip": "In 2.1.326, agent-team sessions start in Code Mode when it is enabled.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2122821446602780783",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122821446602780783"
+  },
+  {
+   "id": "x-2122821446602780783-3",
+   "posted_at": "2026-11-17T22:37:27Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "No more SSH logouts from PID reuse",
+   "tip": "In 2.1.326, the background service no longer kills user processes on PID reuse, which had caused unexpected SSH logouts.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2122821446602780783",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122821446602780783"
+  },
+  {
+   "id": "x-2122835481855394129",
+   "posted_at": "2026-11-17T23:33:13Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Stateful multi-step workflows",
+   "tip": "Claude Code 2.1.327 can launch agents that split complex multi-step tasks into stateful workflows.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2122835481855394129",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122835481855394129"
+  },
+  {
+   "id": "x-2122835481855394129-2",
+   "posted_at": "2026-11-17T23:33:13Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-17",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "/install-github-app asks first",
+   "tip": "In 2.1.327, `/install-github-app` asks for confirmation before modifying a repository.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2122835481855394129",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122835481855394129"
+  },
+  {
+   "id": "x-2123226990551445634",
+   "posted_at": "2026-11-19T01:28:56Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-18",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Auto mode on clouds and gateways",
+   "tip": "Claude Code 2.1.328 adds auto mode for Opus/Sonnet 4.6 on clouds and gateways, letting sessions skip permission prompts. It also warns that cloud sessions may hold or drop messages when permission prompts are skipped.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "permissions"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123226990551445634",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123226990551445634"
+  },
+  {
+   "id": "x-2123226990551445634-2",
+   "posted_at": "2026-11-19T01:28:56Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-18",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "title": "onFailure: block for mcp_tool hooks",
+   "tip": "2.1.328 added `onFailure: block` for mcp_tool hooks, so a failed hook call blocks the action instead of allowing a partial run.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "hooks",
+    "mcp"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123226990551445634",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123226990551445634"
+  },
+  {
+   "id": "x-2123546030654333070",
+   "posted_at": "2026-11-19T22:36:41Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-19",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Risky-action confirmations removed again",
+   "tip": "Claude Code 2.1.329 removed the risky-action confirmations: gated steps no longer prompt and run automatically.",
+   "source_type": "post",
+   "tags": [
+    "release"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123546030654333070",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123546030654333070"
+  },
+  {
+   "id": "x-2123546030654333070-2",
+   "posted_at": "2026-11-19T22:36:41Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-19",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "title": "See scheduled work in /tasks",
+   "tip": "In 2.1.329, the session `/tasks` view shows scheduled tasks, `/loop` wakeups and goal forks; pressing `x` asks for confirmation before stopping a task.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "commands"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123546030654333070",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123546030654333070"
+  },
+  {
+   "id": "x-2121470943314788696",
+   "posted_at": "2026-11-14T05:11:02Z",
+   "author": "dani_avila7",
+   "date": "2026-11-13",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Subagents",
+   "title": "database-architect subagent for migrations",
+   "tip": "The rewritten database-architect agent reads your existing schema and migrations, catches locking risks and breaking changes, handles rolling deployments (using lock_timeout and CREATE INDEX CONCURRENTLY) and tests migrations on a temporary database before finishing. In his test (an 80M-row table, a migration needed 10 minutes before deployment), the same prompt scored 6/10 without the agent and 10/10 with it, and Claude picked the agent automatically in all 8 tests. Install: `npx claude-code-templates@latest --agent database/database-architect`.",
+   "source_type": "post",
+   "tags": [
+    "subagents",
+    "databases"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2121470943314788696",
+   "related_urls": [
+    "https://aitmpl.com/component/agents/database/database-architect"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121470943314788696"
+  },
+  {
+   "id": "x-2122937536565641711",
+   "posted_at": "2026-11-18T06:18:45Z",
+   "author": "dani_avila7",
+   "date": "2026-11-17",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Subagents",
+   "title": "supabase-schema-architect subagent",
+   "tip": "For Supabase projects, the supabase-schema-architect agent designs schemas, migrations, RLS policies and Storage permissions. It covers explicit grants in every migration, RLS policies with auth.uid() and proper WITH CHECK rules, security definer functions without recursive policies, column-level permissions and PostgreSQL 16 trigger/RLS execution order. Before delivering, it tests access as two different authenticated users and runs the Supabase linter. Install: `npx claude-code-templates@latest --agent database/supabase-schema-architect`.",
+   "source_type": "post",
+   "tags": [
+    "subagents",
+    "supabase",
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2122937536565641711",
+   "related_urls": [
+    "https://www.aitmpl.com/component/agents/database/supabase-schema-architect"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122937536565641711"
+  },
+  {
+   "id": "x-2123268852196786589",
+   "posted_at": "2026-11-19T04:15:17Z",
+   "author": "dani_avila7",
+   "date": "2026-11-18",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Subagents",
+   "title": "api-security-audit subagent",
+   "tip": "Run the API Security Audit subagent on your REST API: it reviews authentication and JWT vulnerabilities, authorization flaws and privilege escalation, SQL/NoSQL injection, sensitive data exposure, and OWASP API Top 10 and rate limiting, then suggests fixes with code examples. Install: `npx claude-code-templates@latest --agent security/api-security-audit`.",
+   "source_type": "post",
+   "tags": [
+    "subagents",
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2123268852196786589",
+   "related_urls": [
+    "https://www.aitmpl.com/component/agents/security/api-security-audit"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123268852196786589"
+  },
+  {
+   "id": "x-2123223560579633625",
+   "posted_at": "2026-11-19T01:15:19Z",
+   "author": "dani_avila7",
+   "date": "2026-11-18",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Skills",
+   "title": "Check a skill's compatibility across harnesses",
+   "tip": "A skill loading successfully doesn't mean it works as intended across agents. aitmpl.com now runs NVIDIA SkillEvaluator to check a skill against six harnesses (Claude Code, Codex, Copilot CLI, OpenCode, Hermes, OpenClaw) and shows issues and suggested fixes for each; open any skill and select the Compatibility tab.",
+   "source_type": "post",
+   "tags": [
+    "skills"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2123223560579633625",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123223560579633625"
+  },
+  {
+   "id": "x-2122544936239218893",
+   "posted_at": "2026-11-17T04:18:42Z",
+   "author": "dani_avila7",
+   "date": "2026-11-16",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "AI Templates MCP in the Claude plugin marketplace",
+   "tip": "The AI Templates MCP in the official Claude Plugin Marketplace lets Claude search nearly 2,000 Claude Code components (agents, skills, hooks, commands, MCPs, settings, plugins), inspect their source and security scans, and generate one command that installs up to 20 of them. Tools: search_components, get_component, get_install_command, list_categories. It is remote, read-only and needs no account.",
+   "source_type": "post",
+   "tags": [
+    "mcp",
+    "plugins"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2122544936239218893",
+   "related_urls": [
+    "https://claude.ai/directory/b11278c7-5768-4852-9728-79783ef2e160"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122544936239218893"
+  },
+  {
+   "id": "x-2121375309287301360",
+   "posted_at": "2026-11-13T22:51:01Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-13",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Projects",
+   "title": "Let the project coordinator run parallel threads",
+   "tip": "In a Claude Code project, Claude coordinates your tasks across parallel threads. The coordinator is now more proactive: it answers your questions in the project chat and gives you status updates on ongoing threads.",
+   "source_type": "post",
+   "tags": [
+    "projects"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2121375309287301360",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121375309287301360"
+  },
+  {
+   "id": "x-2122918299600093267",
+   "posted_at": "2026-11-18T05:02:19Z",
+   "author": "dani_avila7",
+   "date": "2026-11-17",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Long-running cloud sessions",
+   "title": "Design long runs for surprise restarts",
+   "tip": "In Claude Projects and cloud sessions, the machine can restart without warning during hours-long processes, stopping containers, orchestrators and monitoring; completed work stays on disk but in-progress work can be lost. Make your orchestrator checkpoint after every step, resume from the last successful step, recover with a single script, check disk space and budget before each step, and alert you immediately when something stops.",
+   "source_type": "post",
+   "tags": [
+    "cloud sessions",
+    "long-running"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2122918299600093267",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122918299600093267"
+  },
+  {
+   "id": "x-2120973994191094179",
+   "posted_at": "2026-11-12T20:16:20Z",
+   "author": "claudeai",
+   "date": "2026-11-12",
+   "topic": "Claude apps",
+   "subcategory": "Meetings",
+   "title": "Add Claude to your video calls",
+   "tip": "Claude Meetings adds Claude to your team's video call, where it builds docs, whiteboards and other artifacts with you while you are still talking. Rolling out in beta on Team and Enterprise plans.",
+   "source_type": "post",
+   "tags": [
+    "meetings"
+   ],
+   "source_url": "https://x.com/claudeai/status/2120973994191094179",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2120973994191094179"
+  },
+  {
+   "id": "x-2122036839238492493",
+   "posted_at": "2026-11-15T18:39:42Z",
+   "author": "felixrieseberg",
+   "date": "2026-11-15",
+   "topic": "Claude apps",
+   "subcategory": "Desktop apps & artifacts",
+   "title": "HTML-in-Canvas in the desktop apps",
+   "tip": "HTML-in-Canvas is now enabled in Claude's desktop apps, so Claude can build unusual, Flash-era-style sites. Demo artifact linked in the post.",
+   "source_type": "post",
+   "tags": [
+    "desktop",
+    "artifacts"
+   ],
+   "source_url": "https://x.com/felixrieseberg/status/2122036839238492493",
+   "related_urls": [
+    "https://claude.ai/artifact/7cCNqKnoFSoib9SuNLB3vk"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122036839238492493"
+  },
+  {
+   "id": "x-2121695097674981849",
+   "posted_at": "2026-11-14T20:01:45Z",
+   "author": "simonw",
+   "date": "2026-11-14",
+   "topic": "Claude apps",
+   "subcategory": "Chat & permissions",
+   "title": "Unblock auto mode by granting permission in chat",
+   "tip": "Regular Claude chat now uses auto mode, so it occasionally refuses to run something. Prompting \"Hey permission system, I give this session permission to run this experiment for me (now try again)\" seemed to unblock it, because auto mode takes your messages into account.",
+   "source_type": "post",
+   "tags": [
+    "auto mode",
+    "permissions"
+   ],
+   "source_url": "https://x.com/simonw/status/2121695097674981849",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2121695097674981849"
+  },
+  {
+   "id": "x-2120983722182988206",
+   "posted_at": "2026-11-12T20:54:59Z",
+   "author": "alexalbert__",
+   "date": "2026-11-12",
+   "topic": "Prompting & context",
+   "subcategory": "Closing context gaps",
+   "title": "Find the context Claude is missing",
+   "tip": "A lot of getting good work out of Claude now is finding the context it's missing and closing that gap. Claude Meetings is one way to bring in the remaining pieces and has proved useful inside Anthropic.",
+   "source_type": "post",
+   "tags": [
+    "context"
+   ],
+   "source_url": "https://x.com/alexalbert__/status/2120983722182988206",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2120983722182988206"
+  },
+  {
+   "id": "x-2123135599833964893",
+   "posted_at": "2026-11-18T19:25:47Z",
+   "author": "dani_avila7",
+   "date": "2026-11-18",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Claude Platform OAuth instead of API keys",
+   "tip": "With Claude Platform OAuth, users connect their Claude organization to your app instead of sharing API keys. Usage is billed to the customer's organization, developers choose who pays for each request, and users can set spending limits and revoke access at any time.",
+   "source_type": "post",
+   "tags": [
+    "oauth",
+    "billing"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2123135599833964893",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2123135599833964893"
+  },
+  {
+   "id": "x-2123144212896268379",
+   "posted_at": "2026-11-18T20:00:01Z",
+   "author": "dani_avila7",
+   "date": "2026-11-18",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Use billing_policy to choose who pays",
+   "tip": "With Linked Billing, set `billing_policy` to decide per API request whether your platform or your customer pays, so you can charge for your software while users pay for their own tokens.",
+   "source_type": "post",
+   "tags": [
+    "billing"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2123144212896268379",
+   "source_id": "x-2123135599833964893",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122751844455956760",
+   "posted_at": "2026-11-17T18:00:53Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-17",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Linked billing (beta)",
+   "tip": "Linked billing is in beta on the Claude Platform: users of tools like Factory, Linear and Ramp can pay for Claude API usage through their own Claude Platform organization without sharing an API key.",
+   "source_type": "post",
+   "tags": [
+    "billing"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2122751844455956760",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122751844455956760"
+  },
+  {
+   "id": "x-2120938988165091693",
+   "posted_at": "2026-11-12T17:57:14Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-12",
+   "topic": "Claude API & platform",
+   "subcategory": "Managed Agents",
+   "title": "Self-host Claude Managed Agents",
+   "tip": "Self-hosted Claude Managed Agents is in private beta: host the agent harness, sandboxes and session history in your own cloud or on-premises, and choose where requests to Claude are sent.",
+   "source_type": "post",
+   "tags": [
+    "managed agents"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2120938988165091693",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2120938988165091693"
+  },
+  {
+   "id": "x-2120962481225146636",
+   "posted_at": "2026-11-12T19:30:35Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-12",
+   "topic": "Claude API & platform",
+   "subcategory": "Model upgrades",
+   "title": "Rethink your harness when you upgrade models",
+   "tip": "When you upgrade to a new model, rethink your harness and measure cost per task. That is the topic of this ClaudeDevs video with @dejno and @luccasiau, who also explain how Anthropic launches new models on its API.",
+   "source_type": "video",
+   "tags": [
+    "models",
+    "cost"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2120962481225146636",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2120962481225146636"
+  },
+  {
+   "id": "x-2122457608963395586",
+   "posted_at": "2026-11-16T22:31:41Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-16",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "Let Claude verify its own work",
+   "tip": "Claude writes better code when it can verify its work, and checks that used to be expensive (tests, benchmarks, end-to-end runs) are now cheap. The Claude Code team's approach is written up on the Claude blog.",
+   "source_type": "post",
+   "tags": [
+    "verification"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2122457608963395586",
+   "related_urls": [
+    "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122457608963395586"
+  },
+  {
+   "id": "x-2122500307557265651",
+   "posted_at": "2026-11-17T01:21:22Z",
+   "author": "simonw",
+   "date": "2026-11-16",
+   "topic": "Verification & security",
+   "subcategory": "Sandboxing",
+   "title": "The external sandbox pattern",
+   "tip": "In the external sandbox pattern, the coding agent runs on your Mac but executes code inside a WebAssembly, QEMU or Apple Container sandbox. The write-up includes a demo for Claude Code (plus Codex and Pi).",
+   "source_type": "post",
+   "tags": [
+    "sandbox"
+   ],
+   "source_url": "https://x.com/simonw/status/2122500307557265651",
+   "related_urls": [
+    "https://blog.primeradiant.com/external-sandboxes-for-coding-agents/"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122500307557265651"
+  },
+  {
+   "id": "x-2122803331156398269",
+   "posted_at": "2026-11-17T21:25:28Z",
+   "author": "dani_avila7",
+   "date": "2026-11-17",
+   "topic": "Verification & security",
+   "subcategory": "Security programs",
+   "title": "Anthropic's security programs for developers",
+   "tip": "Anthropic is cutting disclosure timelines for high and critical vulnerabilities from 90 to 30 days, and opening three programs: OSS Scanner (Claude scans open-source projects for vulnerabilities), Claude for Open Source (6 months of Claude Ultra free for eligible maintainers) and the Cyber Verification Program (access to Claude for legitimate security research).",
+   "source_type": "post",
+   "tags": [
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2122803331156398269",
+   "related_urls": [
+    "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
+   ],
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122803331156398269"
+  },
+  {
+   "id": "x-2122012847958007962",
+   "posted_at": "2026-11-15T17:04:22Z",
+   "author": "dani_avila7",
+   "date": "2026-11-15",
+   "topic": "Verification & security",
+   "subcategory": "Security programs",
+   "title": "Cyber Verification Program unlocks Defense Access",
+   "tip": "Approval for Anthropic's Cyber Verification Program gives your Claude account Defense Access, which reduces security-related blocks for legitimate defensive work such as malware analysis, vulnerability validation and incident response, and includes access to Claude Mythos models.",
+   "source_type": "post",
+   "tags": [
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2122012847958007962",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19",
+   "source_id": "x-2122012847958007962"
+  }
+ ],
+ "sources": [
+  {
+   "id": "yt-vlfCjWuv4es",
+   "type": "video",
+   "title": "Lydia Hallie: Claude Code best practices (AI Engineer talk)",
+   "url": "https://www.youtube.com/watch?v=vlfCjWuv4es",
+   "posted_in": "https://x.com/cjav_dev/status/2120914100146557122",
+   "author": "cjav_dev",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "summary_status": "coming",
+   "summary": "@lydiahallie's AI Engineer talk, which @cjav_dev describes as packed with updated best practices for using Claude Code well. Summary coming once the video has been watched.",
+   "credit": "Talk by @lydiahallie",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "post",
+   "title": "Claude Code 2.1.326 release highlights (unofficial changelog)",
+   "id": "x-2122821446602780783",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2122821446602780783",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "post",
+   "title": "Claude Code 2.1.327 release highlights (unofficial changelog)",
+   "id": "x-2122835481855394129",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2122835481855394129",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "post",
+   "title": "Claude Code 2.1.328 release highlights (unofficial changelog)",
+   "id": "x-2123226990551445634",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2123226990551445634",
+   "date": "2026-11-18",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "post",
+   "title": "Claude Code 2.1.329 release highlights (unofficial changelog)",
+   "id": "x-2123546030654333070",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2123546030654333070",
+   "date": "2026-11-19",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "thread",
+   "title": "Claude Platform OAuth and Linked Billing for agent platforms",
+   "id": "x-2123135599833964893",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2123135599833964893",
+   "date": "2026-11-18",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "type": "video",
+   "title": "How Anthropic launches new models on the API (ClaudeDevs video)",
+   "summary_status": "coming",
+   "has_local_copy": true,
+   "summary": "Short ClaudeDevs video (about 81 s) with @dejno and @luccasiau on launching new models on the API, rethinking your harness and measuring cost per task. Summary coming once watched.",
+   "id": "x-2120962481225146636",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2120962481225146636",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121313048820617645",
+   "type": "post",
+   "title": null,
+   "author": "lydiahallie",
+   "url": "https://x.com/lydiahallie/status/2121313048820617645",
+   "date": "2026-11-13",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121011733699633613",
+   "type": "post",
+   "title": null,
+   "author": "lydiahallie",
+   "url": "https://x.com/lydiahallie/status/2121011733699633613",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122801681939234950",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122801681939234950",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121789088499933223",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2121789088499933223",
+   "date": "2026-11-14",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121392666244186327",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2121392666244186327",
+   "date": "2026-11-13",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122028598639136810",
+   "type": "post",
+   "title": null,
+   "author": "lydiahallie",
+   "url": "https://x.com/lydiahallie/status/2122028598639136810",
+   "date": "2026-11-15",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122821051910684824",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122821051910684824",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122439098740674839",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122439098740674839",
+   "date": "2026-11-16",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121076519296450582",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2121076519296450582",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121721387547267498",
+   "type": "post",
+   "title": null,
+   "author": "RLanceMartin",
+   "url": "https://x.com/RLanceMartin/status/2121721387547267498",
+   "date": "2026-11-14",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121470943314788696",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2121470943314788696",
+   "date": "2026-11-13",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122937536565641711",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2122937536565641711",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2123268852196786589",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2123268852196786589",
+   "date": "2026-11-18",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2123223560579633625",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2123223560579633625",
+   "date": "2026-11-18",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122544936239218893",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2122544936239218893",
+   "date": "2026-11-16",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121375309287301360",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2121375309287301360",
+   "date": "2026-11-13",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122918299600093267",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2122918299600093267",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2120973994191094179",
+   "type": "post",
+   "title": null,
+   "author": "claudeai",
+   "url": "https://x.com/claudeai/status/2120973994191094179",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122036839238492493",
+   "type": "post",
+   "title": null,
+   "author": "felixrieseberg",
+   "url": "https://x.com/felixrieseberg/status/2122036839238492493",
+   "date": "2026-11-15",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2121695097674981849",
+   "type": "post",
+   "title": null,
+   "author": "simonw",
+   "url": "https://x.com/simonw/status/2121695097674981849",
+   "date": "2026-11-14",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2120983722182988206",
+   "type": "post",
+   "title": null,
+   "author": "alexalbert__",
+   "url": "https://x.com/alexalbert__/status/2120983722182988206",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122751844455956760",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122751844455956760",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2120938988165091693",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2120938988165091693",
+   "date": "2026-11-12",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122457608963395586",
+   "type": "post",
+   "title": null,
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122457608963395586",
+   "date": "2026-11-16",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122500307557265651",
+   "type": "post",
+   "title": null,
+   "author": "simonw",
+   "url": "https://x.com/simonw/status/2122500307557265651",
+   "date": "2026-11-16",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122803331156398269",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2122803331156398269",
+   "date": "2026-11-17",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  },
+  {
+   "id": "x-2122012847958007962",
+   "type": "post",
+   "title": null,
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2122012847958007962",
+   "date": "2026-11-15",
+   "added_at": "2026-11-19T21:51:19-07:00",
+   "edition": "2026-11-19"
+  }
+ ],
+ "schema_version": 2
+}

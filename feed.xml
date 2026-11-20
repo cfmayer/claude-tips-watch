@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Claude Tips Watch</title>
+  <subtitle>Searchable reference of Claude and Claude Code tips from 16 accounts on X</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
+  <id>https://cfmayer.github.io/claude-tips-watch/</id>
+  <updated>2026-11-19T21:51:19-07:00</updated>
+  <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.329 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123546030654333070"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2123546030654333070"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123546030654333070</id>
+    <published>2026-11-19T22:36:41Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Risky-action confirmations removed again: Claude Code 2.1.329 removed the risky-action confirmations: gated steps no longer prompt and run automatically.
+• See scheduled work in /tasks: In 2.1.329, the session `/tasks` view shows scheduled tasks, `/loop` wakeups and goal forks; pressing `x` asks for confirmation before stopping a task. (Source: https://x.com/ClaudeCodeLog/status/2123546030654333070)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Subagents: api-security-audit subagent</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123268852196786589"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2123268852196786589"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123268852196786589</id>
+    <published>2026-11-19T04:15:17Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• api-security-audit subagent: Run the API Security Audit subagent on your REST API: it reviews authentication and JWT vulnerabilities, authorization flaws and privilege escalation, SQL/NoSQL injection, sensitive data exposure, and OWASP API Top 10 and rate limiting, then suggests fixes with code examples. Install: `npx claude-code-templates@latest --agent security/api-security-audit`. (Source: https://x.com/dani_avila7/status/2123268852196786589)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.328 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123226990551445634"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2123226990551445634"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123226990551445634</id>
+    <published>2026-11-19T01:28:56Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Auto mode on clouds and gateways: Claude Code 2.1.328 adds auto mode for Opus/Sonnet 4.6 on clouds and gateways, letting sessions skip permission prompts. It also warns that cloud sessions may hold or drop messages when permission prompts are skipped.
+• onFailure: block for mcp_tool hooks: 2.1.328 added `onFailure: block` for mcp_tool hooks, so a failed hook call blocks the action instead of allowing a partial run. (Source: https://x.com/ClaudeCodeLog/status/2123226990551445634)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Skills: Check a skill&#x27;s compatibility across harnesses</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123223560579633625"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2123223560579633625"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123223560579633625</id>
+    <published>2026-11-19T01:15:19Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Check a skill&#x27;s compatibility across harnesses: A skill loading successfully doesn&#x27;t mean it works as intended across agents. aitmpl.com now runs NVIDIA SkillEvaluator to check a skill against six harnesses (Claude Code, Codex, Copilot CLI, OpenCode, Hermes, OpenClaw) and shows issues and suggested fixes for each; open any skill and select the Compatibility tab. (Source: https://x.com/dani_avila7/status/2123223560579633625)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Auth &amp; billing: Claude Platform OAuth and Linked Billing for agent platforms</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123135599833964893"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2123135599833964893"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123135599833964893</id>
+    <published>2026-11-18T19:25:47Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Claude Platform OAuth instead of API keys: With Claude Platform OAuth, users connect their Claude organization to your app instead of sharing API keys. Usage is billed to the customer&#x27;s organization, developers choose who pays for each request, and users can set spending limits and revoke access at any time.
+• Use billing_policy to choose who pays: With Linked Billing, set `billing_policy` to decide per API request whether your platform or your customer pays, so you can charge for your software while users pay for their own tokens. (Source: https://x.com/dani_avila7/status/2123135599833964893)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Subagents: supabase-schema-architect subagent</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122937536565641711"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2122937536565641711"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122937536565641711</id>
+    <published>2026-11-18T06:18:45Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• supabase-schema-architect subagent: For Supabase projects, the supabase-schema-architect agent designs schemas, migrations, RLS policies and Storage permissions. It covers explicit grants in every migration, RLS policies with auth.uid() and proper WITH CHECK rules, security definer functions without recursive policies, column-level permissions and PostgreSQL 16 trigger/RLS execution order. Before delivering, it tests access as two different authenticated users and runs the Supabase linter. Install: `npx claude-code-templates@latest --agent database/supabase-schema-architect`. (Source: https://x.com/dani_avila7/status/2122937536565641711)</summary>
+  </entry>
+  <entry>
+    <title>Projects &amp; cloud sessions › Long-running cloud sessions: Design long runs for surprise restarts</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122918299600093267"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2122918299600093267"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122918299600093267</id>
+    <published>2026-11-18T05:02:19Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Design long runs for surprise restarts: In Claude Projects and cloud sessions, the machine can restart without warning during hours-long processes, stopping containers, orchestrators and monitoring; completed work stays on disk but in-progress work can be lost. Make your orchestrator checkpoint after every step, resume from the last successful step, recover with a single script, check disk space and budget before each step, and alert you immediately when something stops. (Source: https://x.com/dani_avila7/status/2122918299600093267)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.327 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122835481855394129"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2122835481855394129"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122835481855394129</id>
+    <published>2026-11-17T23:33:13Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Stateful multi-step workflows: Claude Code 2.1.327 can launch agents that split complex multi-step tasks into stateful workflows.
+• /install-github-app asks first: In 2.1.327, `/install-github-app` asks for confirmation before modifying a repository. (Source: https://x.com/ClaudeCodeLog/status/2122835481855394129)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.326 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122821446602780783"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2122821446602780783"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122821446602780783</id>
+    <published>2026-11-17T22:37:27Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Confirmations for destructive actions: Claude Code 2.1.326 added confirmations for risky destructive actions (git operations, deletes) to reduce accidental data loss.
+• Agent-team sessions open in Code Mode: In 2.1.326, agent-team sessions start in Code Mode when it is enabled.
+• No more SSH logouts from PID reuse: In 2.1.326, the background service no longer kills user processes on PID reuse, which had caused unexpected SSH logouts. (Source: https://x.com/ClaudeCodeLog/status/2122821446602780783)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Switch Claude Desktop to the Latest release channel</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122821051910684824"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2122821051910684824"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122821051910684824</id>
+    <published>2026-11-17T22:35:53Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Switch Claude Desktop to the Latest release channel: To get more frequent Claude Desktop builds on Windows and Mac, switch to the Latest release channel in Settings &gt; Desktop app. Fixes and improvements arrive faster, but these builds can be less reliable than Stable, which stays the default. (Source: https://x.com/ClaudeDevs/status/2122821051910684824)</summary>
+  </entry>
+  <entry>
+    <title>Verification &amp; security › Security programs: Anthropic&#x27;s security programs for developers</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122803331156398269"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2122803331156398269"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122803331156398269</id>
+    <published>2026-11-17T21:25:28Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Anthropic&#x27;s security programs for developers: Anthropic is cutting disclosure timelines for high and critical vulnerabilities from 90 to 30 days, and opening three programs: OSS Scanner (Claude scans open-source projects for vulnerabilities), Claude for Open Source (6 months of Claude Ultra free for eligible maintainers) and the Cyber Verification Program (access to Claude for legitimate security research). (Source: https://x.com/dani_avila7/status/2122803331156398269)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Code Mode &amp; tool use: Try experimental Code Mode</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122801681939234950"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2122801681939234950"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122801681939234950</id>
+    <published>2026-11-17T21:18:55Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Try experimental Code Mode: Code Mode is a new, experimental way for Claude Code to work with tools: Claude writes scripts that chain your tools together, and it can answer you while long commands are still running. Opt in with `CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1`. (Source: https://x.com/ClaudeDevs/status/2122801681939234950)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Auth &amp; billing: Linked billing (beta)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122751844455956760"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2122751844455956760"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122751844455956760</id>
+    <published>2026-11-17T18:00:53Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Linked billing (beta): Linked billing is in beta on the Claude Platform: users of tools like Factory, Linear and Ramp can pay for Claude API usage through their own Claude Platform organization without sharing an API key. (Source: https://x.com/ClaudeDevs/status/2122751844455956760)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Plugins, MCP &amp; marketplace: AI Templates MCP in the Claude plugin marketplace</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122544936239218893"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2122544936239218893"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122544936239218893</id>
+    <published>2026-11-17T04:18:42Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• AI Templates MCP in the Claude plugin marketplace: The AI Templates MCP in the official Claude Plugin Marketplace lets Claude search nearly 2,000 Claude Code components (agents, skills, hooks, commands, MCPs, settings, plugins), inspect their source and security scans, and generate one command that installs up to 20 of them. Tools: search_components, get_component, get_install_command, list_categories. It is remote, read-only and needs no account. (Source: https://x.com/dani_avila7/status/2122544936239218893)</summary>
+  </entry>
+  <entry>
+    <title>Verification &amp; security › Sandboxing: The external sandbox pattern</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122500307557265651"/>
+    <link rel="related" href="https://x.com/simonw/status/2122500307557265651"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122500307557265651</id>
+    <published>2026-11-17T01:21:22Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@simonw</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• The external sandbox pattern: In the external sandbox pattern, the coding agent runs on your Mac but executes code inside a WebAssembly, QEMU or Apple Container sandbox. The write-up includes a demo for Claude Code (plus Codex and Pi). (Source: https://x.com/simonw/status/2122500307557265651)</summary>
+  </entry>
+  <entry>
+    <title>Verification &amp; security › Verification: Let Claude verify its own work</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122457608963395586"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2122457608963395586"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122457608963395586</id>
+    <published>2026-11-16T22:31:41Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Let Claude verify its own work: Claude writes better code when it can verify its work, and checks that used to be expensive (tests, benchmarks, end-to-end runs) are now cheap. The Claude Code team&#x27;s approach is written up on the Claude blog. (Source: https://x.com/ClaudeDevs/status/2122457608963395586)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Test foldable layouts with iPhone Duo</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122439098740674839"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2122439098740674839"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122439098740674839</id>
+    <published>2026-11-16T21:18:08Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Test foldable layouts with iPhone Duo: Claude Code on desktop supports iPhone Duo in the iOS simulator (public beta). Run your app on Duo next to your conversation, and Claude can fold and unfold the device to test each layout. (Source: https://x.com/ClaudeDevs/status/2122439098740674839)</summary>
+  </entry>
+  <entry>
+    <title>Claude apps › Desktop apps &amp; artifacts: HTML-in-Canvas in the desktop apps</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493"/>
+    <link rel="related" href="https://x.com/felixrieseberg/status/2122036839238492493"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493</id>
+    <published>2026-11-15T18:39:42Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@felixrieseberg</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• HTML-in-Canvas in the desktop apps: HTML-in-Canvas is now enabled in Claude&#x27;s desktop apps, so Claude can build unusual, Flash-era-style sites. Demo artifact linked in the post. (Source: https://x.com/felixrieseberg/status/2122036839238492493)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Themes can react to your session</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810"/>
+    <link rel="related" href="https://x.com/lydiahallie/status/2122028598639136810"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122028598639136810</id>
+    <published>2026-11-15T18:06:57Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@lydiahallie</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Themes can react to your session: Because custom themes are mods, the background can react to your actual session. Example: Claude made it snow as the context window fills up, with the mod hooking into `turn.step`. (Source: https://x.com/lydiahallie/status/2122028598639136810)</summary>
+  </entry>
+  <entry>
+    <title>Verification &amp; security › Security programs: Cyber Verification Program unlocks Defense Access</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122012847958007962"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2122012847958007962"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2122012847958007962</id>
+    <published>2026-11-15T17:04:22Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Cyber Verification Program unlocks Defense Access: Approval for Anthropic&#x27;s Cyber Verification Program gives your Claude account Defense Access, which reduces security-related blocks for legitimate defensive work such as malware analysis, vulnerability validation and incident response, and includes access to Claude Mythos models. (Source: https://x.com/dani_avila7/status/2122012847958007962)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Code Mode &amp; tool use: What Code Mode changes</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121789088499933223"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2121789088499933223"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121789088499933223</id>
+    <published>2026-11-15T02:15:14Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• What Code Mode changes: Available experimentally from Claude Code 2.1.325: instead of calling tools one by one, Claude writes JavaScript that runs several tool calls in a single step. It can run commands in parallel, chain operations, and filter results before they are sent back to the model. (Source: https://x.com/dani_avila7/status/2121789088499933223)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Model choice &amp; cost: Opus 5.5 medium as a daily driver</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121721387547267498"/>
+    <link rel="related" href="https://x.com/RLanceMartin/status/2121721387547267498"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121721387547267498</id>
+    <published>2026-11-14T21:46:13Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@RLanceMartin</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Opus 5.5 medium as a daily driver: Opus 5.5 at medium effort is a fantastic daily driver and baseline. For when to reach for Fable 5.2 instead of Opus 5.5, see the Claude blog&#x27;s model guidance. (Source: https://x.com/RLanceMartin/status/2121721387547267498)</summary>
+  </entry>
+  <entry>
+    <title>Claude apps › Chat &amp; permissions: Unblock auto mode by granting permission in chat</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121695097674981849"/>
+    <link rel="related" href="https://x.com/simonw/status/2121695097674981849"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121695097674981849</id>
+    <published>2026-11-14T20:01:45Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@simonw</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Unblock auto mode by granting permission in chat: Regular Claude chat now uses auto mode, so it occasionally refuses to run something. Prompting &quot;Hey permission system, I give this session permission to run this experiment for me (now try again)&quot; seemed to unblock it, because auto mode takes your messages into account. (Source: https://x.com/simonw/status/2121695097674981849)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Subagents: database-architect subagent for migrations</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121470943314788696"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2121470943314788696"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121470943314788696</id>
+    <published>2026-11-14T05:11:02Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• database-architect subagent for migrations: The rewritten database-architect agent reads your existing schema and migrations, catches locking risks and breaking changes, handles rolling deployments (using lock_timeout and CREATE INDEX CONCURRENTLY) and tests migrations on a temporary database before finishing. In his test (an 80M-row table, a migration needed 10 minutes before deployment), the same prompt scored 6/10 without the agent and 10/10 with it, and Claude picked the agent automatically in all 8 tests. Install: `npx claude-code-templates@latest --agent database/database-architect`. (Source: https://x.com/dani_avila7/status/2121470943314788696)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Build custom themes with mods</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2121392666244186327"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121392666244186327</id>
+    <published>2026-11-13T23:59:59Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Build custom themes with mods: Claude Code on desktop supports custom themes built with mods: change the colors or add an animated background. Describe the look you want to Claude, or start from the theme-examples plugin. (Source: https://x.com/ClaudeDevs/status/2121392666244186327)</summary>
+  </entry>
+  <entry>
+    <title>Projects &amp; cloud sessions › Projects: Let the project coordinator run parallel threads</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121375309287301360"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2121375309287301360"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121375309287301360</id>
+    <published>2026-11-13T22:51:01Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Let the project coordinator run parallel threads: In a Claude Code project, Claude coordinates your tasks across parallel threads. The coordinator is now more proactive: it answers your questions in the project chat and gives you status updates on ongoing threads. (Source: https://x.com/ClaudeDevs/status/2121375309287301360)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Hooks &amp; guardrails: Make a Stop hook retry with exit code 2</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121313048820617645"/>
+    <link rel="related" href="https://x.com/lydiahallie/status/2121313048820617645"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121313048820617645</id>
+    <published>2026-11-13T18:43:37Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@lydiahallie</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Make a Stop hook retry with exit code 2: A Stop hook can send Claude back to try again when a check fails, but only if the hook exits with code 2. Exit 2 returns Claude to retry with the hook&#x27;s stderr; exit 1 is non-blocking, so Claude just finishes even though the check failed. (Source: https://x.com/lydiahallie/status/2121313048820617645)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Model choice &amp; cost: Opus as the main model, Fable 5.2 as advisor</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121076519296450582"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2121076519296450582"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121076519296450582</id>
+    <published>2026-11-13T03:03:44Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Opus as the main model, Fable 5.2 as advisor: Use Opus as your main model and Fable 5.2 as its advisor in Claude Code. Opus handles every turn; Fable steps in at critical moments: choosing an approach, debugging recurring errors and reviewing work before completion. You get Fable&#x27;s judgment without paying for Fable on every turn. (Source: https://x.com/dani_avila7/status/2121076519296450582)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Commands &amp; settings: Run /doctor prompt-audit</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2121011733699633613"/>
+    <link rel="related" href="https://x.com/lydiahallie/status/2121011733699633613"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2121011733699633613</id>
+    <published>2026-11-12T22:46:18Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@lydiahallie</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Run /doctor prompt-audit: Run `/doctor prompt-audit` in each of your Claude Code repos if you haven&#x27;t yet. (Source: https://x.com/lydiahallie/status/2121011733699633613)</summary>
+  </entry>
+  <entry>
+    <title>Prompting &amp; context › Closing context gaps: Find the context Claude is missing</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120983722182988206"/>
+    <link rel="related" href="https://x.com/alexalbert__/status/2120983722182988206"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120983722182988206</id>
+    <published>2026-11-12T20:54:59Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@alexalbert__</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Find the context Claude is missing: A lot of getting good work out of Claude now is finding the context it&#x27;s missing and closing that gap. Claude Meetings is one way to bring in the remaining pieces and has proved useful inside Anthropic. (Source: https://x.com/alexalbert__/status/2120983722182988206)</summary>
+  </entry>
+  <entry>
+    <title>Claude apps › Meetings: Add Claude to your video calls</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120973994191094179"/>
+    <link rel="related" href="https://x.com/claudeai/status/2120973994191094179"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120973994191094179</id>
+    <published>2026-11-12T20:16:20Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@claudeai</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Add Claude to your video calls: Claude Meetings adds Claude to your team&#x27;s video call, where it builds docs, whiteboards and other artifacts with you while you are still talking. Rolling out in beta on Team and Enterprise plans. (Source: https://x.com/claudeai/status/2120973994191094179)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Model upgrades: How Anthropic launches new models on the API (ClaudeDevs video)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2120962481225146636"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120962481225146636</id>
+    <published>2026-11-12T19:30:35Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>Short ClaudeDevs video (about 81 s) with @dejno and @luccasiau on launching new models on the API, rethinking your harness and measuring cost per task. Summary coming once watched.
+• Rethink your harness when you upgrade models: When you upgrade to a new model, rethink your harness and measure cost per task. That is the topic of this ClaudeDevs video with @dejno and @luccasiau, who also explain how Anthropic launches new models on its API. (Source: https://x.com/ClaudeDevs/status/2120962481225146636)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Managed Agents: Self-host Claude Managed Agents</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120938988165091693"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2120938988165091693"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120938988165091693</id>
+    <published>2026-11-12T17:57:14Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>• Self-host Claude Managed Agents: Self-hosted Claude Managed Agents is in private beta: host the agent harness, sandboxes and session history in your own cloud or on-premises, and choose where requests to Claude are sent. (Source: https://x.com/ClaudeDevs/status/2120938988165091693)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Commands &amp; settings: Lydia Hallie: Claude Code best practices (AI Engineer talk)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=vlfCjWuv4es"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-19T21:51:19-07:00</updated>
+    <author><name>@cjav_dev</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>@lydiahallie&#x27;s AI Engineer talk, which @cjav_dev describes as packed with updated best practices for using Claude Code well. Summary coming once the video has been watched. (Source: https://www.youtube.com/watch?v=vlfCjWuv4es)</summary>
+  </entry>
+</feed>
