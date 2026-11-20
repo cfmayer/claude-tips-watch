@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-19T21:59:58-07:00",
+ "last_run": "2026-11-20T04:52:51-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -47,6 +47,14 @@
    "tips_added": 10,
    "sources_added": 0,
    "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "window": "2026-11-19/2026-11-20",
+   "tips_added": 19,
+   "sources_added": 0,
+   "source_summaries_updated": 1
   }
  ],
  "tips": [
@@ -1009,24 +1017,442 @@
    "source_id": "x-2122036839238492493",
    "added_at": "2026-11-19T21:59:58-07:00",
    "edition": "2026-11-19"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-1",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "auto mode",
+    "permissions",
+    "video"
+   ],
+   "title": "Move from Manual to Auto permission mode",
+   "tip": "With newer models, switch the permission mode from Manual to Auto: they read intent and your codebase well enough that you don't need to approve every command or steer mid-session.",
+   "source_type": "video",
+   "video_timestamp": "2:45",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=165s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-2",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Prompting & context",
+   "subcategory": "CLAUDE.md & instructions",
+   "tags": [
+    "claude.md",
+    "video"
+   ],
+   "title": "Cut generic warnings from CLAUDE.md",
+   "tip": "Remove generic instructions such as \"Think hard and be thorough.\" or \"IMPORTANT: always use the auth helper\" from CLAUDE.md. Newer models don't need them, and clutter like this can derail them.",
+   "source_type": "video",
+   "video_timestamp": "3:37",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=217s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-3",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Prompting & context",
+   "subcategory": "CLAUDE.md & instructions",
+   "tags": [
+    "claude.md",
+    "context",
+    "video"
+   ],
+   "title": "Keep CLAUDE.md to what Claude can't infer",
+   "tip": "Limit CLAUDE.md to context Claude can't see or work out from the code, for example that a legacy directory is still used by the mobile apps.",
+   "source_type": "video",
+   "video_timestamp": "3:42",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=222s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-4",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "tags": [
+    "/doctor",
+    "claude.md",
+    "skills",
+    "video"
+   ],
+   "title": "Audit your instructions with /doctor prompt-audit",
+   "tip": "Run `/doctor prompt-audit` to check your CLAUDE.md and skills for instructions the new model no longer needs.",
+   "source_type": "video",
+   "video_timestamp": "3:56",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=236s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-5",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "auto mode",
+    "settings",
+    "video"
+   ],
+   "title": "Describe Auto mode's trust boundaries in plain English",
+   "tip": "In `.claude/settings.json`, an `autoMode` block takes plain-English lists: `environment` (e.g. \"Trusted cloud buckets: s3://acme-staging\"), `allow` (\"Deploying to staging is allowed\") and `hard_deny` (\"Never send code to third-party APIs\"), each starting with `\"$defaults\"`.",
+   "source_type": "video",
+   "video_timestamp": "4:48",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=288s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-6",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "permissions",
+    "deny",
+    "video"
+   ],
+   "title": "Hard-block commands with deny rules",
+   "tip": "Add a command to `permissions.deny` in `.claude/settings.json`, e.g. `\"Bash(git reset --hard *)\"`, to block it in the harness before the Auto mode classifier ever sees it.",
+   "source_type": "video",
+   "video_timestamp": "6:04",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=364s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-7",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "permissions",
+    "deny",
+    "video"
+   ],
+   "title": "Rule of thumb for what to deny",
+   "tip": "If Claude could make a mistake you can take back (like git edits), leave it to the model. If you can't take it back (deleting something for good, exposing a secret, sending data outside), make it a deny rule.",
+   "source_type": "video",
+   "video_timestamp": "6:32",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=392s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-8",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "permissions",
+    "secrets",
+    "video"
+   ],
+   "title": "Deny reads of secrets",
+   "tip": "Add deny rules like `\"Read(./.env)\"` and `\"Read(~/.ssh/**)\"` so a compromised dependency can't trick Claude into reading or leaking your secrets.",
+   "source_type": "video",
+   "video_timestamp": "6:58",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=418s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-9",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Verification & security",
+   "subcategory": "Sandboxing",
+   "tags": [
+    "sandbox",
+    "settings",
+    "video"
+   ],
+   "title": "Turn on the shell sandbox",
+   "tip": "Add `\"sandbox\": { \"enabled\": true }` to `.claude/settings.json` to sandbox shell commands at the OS level, limiting which files, folders and hosts a command like `npm test` and its child processes can reach.",
+   "source_type": "video",
+   "video_timestamp": "8:17",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=497s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-10",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Long-running cloud sessions",
+   "tags": [
+    "cloud session",
+    "security",
+    "video"
+   ],
+   "title": "Run long tasks in a cloud session",
+   "tip": "Cloud sessions run on a fresh, isolated machine with your repo, keep going with your laptop closed, and keep local secrets such as `.env`, `~/.ssh` and GitHub tokens out of reach.",
+   "source_type": "video",
+   "video_timestamp": "9:30",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=570s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-11",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Long-running cloud sessions",
+   "tags": [
+    "cloud session",
+    "network",
+    "video"
+   ],
+   "title": "Give cloud sessions only the network and secrets they need",
+   "tip": "Configure Network access with allowed domains (e.g. `api.example.com`) and hand over API keys through Network secrets, instead of exposing your local environment.",
+   "source_type": "video",
+   "video_timestamp": "9:51",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=591s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-12",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "tags": [
+    "verification",
+    "prompting",
+    "video"
+   ],
+   "title": "Ask Claude to prove its work",
+   "tip": "Prompt for verifiable steps, for example \"Split it into tasks, each with its own test.\" and \"Show me the test output.\"",
+   "source_type": "video",
+   "video_timestamp": "12:06",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=726s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-13",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "hooks",
+    "verification",
+    "video"
+   ],
+   "title": "Run checks from lifecycle hooks",
+   "tip": "Use hooks to verify automatically: `PostToolUse` to lint after every edit, `TaskCompleted` to run a task's tests, and `Stop` to run the full suite at the end.",
+   "source_type": "video",
+   "video_timestamp": "12:24",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=744s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-14",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "tags": [
+    "hooks",
+    "exit code",
+    "video"
+   ],
+   "title": "Fail checks with exit 2, not exit 1",
+   "tip": "Make your check scripts exit with code 2 on failure. Exit 1, the common default, gets marked as completed; exit 2 sends Claude back to fix it.",
+   "source_type": "video",
+   "video_timestamp": "13:02",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=782s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-15",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "tags": [
+    "ci",
+    "verification",
+    "video"
+   ],
+   "title": "Let CI failures loop back to Claude",
+   "tip": "With CI auto-fix, a failed PR check goes back to Claude, which fixes it without you stepping in.",
+   "source_type": "video",
+   "video_timestamp": "14:14",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=854s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-16",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "tags": [
+    "ci",
+    "merge",
+    "video"
+   ],
+   "title": "Auto-merge once checks pass",
+   "tip": "Turn on \"Merge when ready\" so PRs merge automatically after their checks pass, so you don't have to hand-review small, safe changes.",
+   "source_type": "video",
+   "video_timestamp": "14:26",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=866s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-17",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "tags": [
+    "code review",
+    "video"
+   ],
+   "title": "Match review effort to risk",
+   "tip": "Let agents do the first review on every PR, then require no humans for small changes (typos, lint fixes), one person for most changes, and several for the riskiest.",
+   "source_type": "video",
+   "video_timestamp": "14:40",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=880s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-18",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Projects",
+   "tags": [
+    "projects",
+    "orchestration",
+    "video"
+   ],
+   "title": "Let a project orchestrate the sessions",
+   "tip": "Claude Code projects (in beta) take an overall goal; an orchestrator splits the work, starts worker sessions and manages their context, so you don't have to juggle sessions yourself.",
+   "source_type": "video",
+   "video_timestamp": "15:28",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=928s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "yt-vlfCjWuv4es-19",
+   "date": "2026-11-12",
+   "author": "cjav_dev",
+   "credit": "Talk by @lydiahallie",
+   "topic": "Projects & cloud sessions",
+   "subcategory": "Projects",
+   "tags": [
+    "projects",
+    "model choice",
+    "video"
+   ],
+   "title": "Fable to orchestrate, Opus 5.5 to code",
+   "tip": "In a project, put a reasoning model like Fable on the orchestrator (deciding tasks, judging results) and Opus 5.5 on the worker threads that write the code.",
+   "source_type": "video",
+   "video_timestamp": "15:54",
+   "source_url": "https://www.youtube.com/watch?v=vlfCjWuv4es&t=954s",
+   "source_id": "yt-vlfCjWuv4es",
+   "added_at": "2026-11-20T04:52:51-07:00",
+   "edition": "2026-11-20",
+   "posted_at": "2026-11-12T16:18:20Z"
   }
  ],
  "sources": [
   {
    "id": "yt-vlfCjWuv4es",
    "type": "video",
-   "title": "Lydia Hallie: Claude Code best practices (AI Engineer talk)",
+   "title": "Lydia Hallie: Rethinking Claude Code Best Practices",
    "url": "https://www.youtube.com/watch?v=vlfCjWuv4es",
    "posted_in": "https://x.com/cjav_dev/status/2120914100146557122",
    "author": "cjav_dev",
    "topic": "Claude Code",
    "subcategory": "Commands & settings",
-   "summary_status": "coming",
-   "summary": "@lydiahallie's AI Engineer talk, which @cjav_dev describes as packed with updated best practices for using Claude Code well. Summary coming once the video has been watched.",
+   "summary_status": "done",
+   "summary": "@lydiahallie's talk \"Rethinking Claude Code Best Practices\": with newer models you can step out of the loop. Five areas: lighter CLAUDE.md steering, Auto mode instead of manual approvals, deny rules, sandboxing and cloud sessions for safety, verification through prompts, hooks and CI, and orchestrating many sessions with Claude Code projects.",
    "credit": "Talk by @lydiahallie",
    "date": "2026-11-12",
    "added_at": "2026-11-19T21:51:19-07:00",
-   "edition": "2026-11-19"
+   "edition": "2026-11-19",
+   "duration_s": 1051
   },
   {
    "type": "post",

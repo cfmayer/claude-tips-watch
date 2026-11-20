@@ -5,8 +5,38 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-19T21:59:58-07:00</updated>
+  <updated>2026-11-20T04:52:51-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude Code › Hooks &amp; guardrails: Lydia Hallie: Rethinking Claude Code Best Practices</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=vlfCjWuv4es"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es</id>
+    <published>2026-11-12T16:18:20Z</published>
+    <updated>2026-11-20T04:52:51-07:00</updated>
+    <author><name>@cjav_dev</name></author>
+    <category term="edition-2026-11-19"/>
+    <summary>@lydiahallie&#x27;s talk &quot;Rethinking Claude Code Best Practices&quot;: with newer models you can step out of the loop. Five areas: lighter CLAUDE.md steering, Auto mode instead of manual approvals, deny rules, sandboxing and cloud sessions for safety, verification through prompts, hooks and CI, and orchestrating many sessions with Claude Code projects.
+• 2:45 Move from Manual to Auto permission mode: With newer models, switch the permission mode from Manual to Auto: they read intent and your codebase well enough that you don&#x27;t need to approve every command or steer mid-session.
+• 3:37 Cut generic warnings from CLAUDE.md: Remove generic instructions such as &quot;Think hard and be thorough.&quot; or &quot;IMPORTANT: always use the auth helper&quot; from CLAUDE.md. Newer models don&#x27;t need them, and clutter like this can derail them.
+• 3:42 Keep CLAUDE.md to what Claude can&#x27;t infer: Limit CLAUDE.md to context Claude can&#x27;t see or work out from the code, for example that a legacy directory is still used by the mobile apps.
+• 3:56 Audit your instructions with /doctor prompt-audit: Run `/doctor prompt-audit` to check your CLAUDE.md and skills for instructions the new model no longer needs.
+• 4:48 Describe Auto mode&#x27;s trust boundaries in plain English: In `.claude/settings.json`, an `autoMode` block takes plain-English lists: `environment` (e.g. &quot;Trusted cloud buckets: s3://acme-staging&quot;), `allow` (&quot;Deploying to staging is allowed&quot;) and `hard_deny` (&quot;Never send code to third-party APIs&quot;), each starting with `&quot;$defaults&quot;`.
+• 6:04 Hard-block commands with deny rules: Add a command to `permissions.deny` in `.claude/settings.json`, e.g. `&quot;Bash(git reset --hard *)&quot;`, to block it in the harness before the Auto mode classifier ever sees it.
+• 6:32 Rule of thumb for what to deny: If Claude could make a mistake you can take back (like git edits), leave it to the model. If you can&#x27;t take it back (deleting something for good, exposing a secret, sending data outside), make it a deny rule.
+• 6:58 Deny reads of secrets: Add deny rules like `&quot;Read(./.env)&quot;` and `&quot;Read(~/.ssh/**)&quot;` so a compromised dependency can&#x27;t trick Claude into reading or leaking your secrets.
+• 8:17 Turn on the shell sandbox: Add `&quot;sandbox&quot;: { &quot;enabled&quot;: true }` to `.claude/settings.json` to sandbox shell commands at the OS level, limiting which files, folders and hosts a command like `npm test` and its child processes can reach.
+• 9:30 Run long tasks in a cloud session: Cloud sessions run on a fresh, isolated machine with your repo, keep going with your laptop closed, and keep local secrets such as `.env`, `~/.ssh` and GitHub tokens out of reach.
+• 9:51 Give cloud sessions only the network and secrets they need: Configure Network access with allowed domains (e.g. `api.example.com`) and hand over API keys through Network secrets, instead of exposing your local environment.
+• 12:06 Ask Claude to prove its work: Prompt for verifiable steps, for example &quot;Split it into tasks, each with its own test.&quot; and &quot;Show me the test output.&quot;
+• 12:24 Run checks from lifecycle hooks: Use hooks to verify automatically: `PostToolUse` to lint after every edit, `TaskCompleted` to run a task&#x27;s tests, and `Stop` to run the full suite at the end.
+• 13:02 Fail checks with exit 2, not exit 1: Make your check scripts exit with code 2 on failure. Exit 1, the common default, gets marked as completed; exit 2 sends Claude back to fix it.
+• 14:14 Let CI failures loop back to Claude: With CI auto-fix, a failed PR check goes back to Claude, which fixes it without you stepping in.
+• 14:26 Auto-merge once checks pass: Turn on &quot;Merge when ready&quot; so PRs merge automatically after their checks pass, so you don&#x27;t have to hand-review small, safe changes.
+• 14:40 Match review effort to risk: Let agents do the first review on every PR, then require no humans for small changes (typos, lint fixes), one person for most changes, and several for the riskiest.
+• 15:28 Let a project orchestrate the sessions: Claude Code projects (in beta) take an overall goal; an orchestrator splits the work, starts worker sessions and manages their context, so you don&#x27;t have to juggle sessions yourself.
+• 15:54 Fable to orchestrate, Opus 5.5 to code: In a project, put a reasoning model like Fable on the orchestrator (deciding tasks, judging results) and Opus 5.5 on the worker threads that write the code. (Source: https://www.youtube.com/watch?v=vlfCjWuv4es)</summary>
+  </entry>
   <entry>
     <title>Claude apps › Desktop apps &amp; artifacts: HTML-in-Canvas experiments in Claude&#x27;s desktop apps (demo)</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2122036839238492493"/>
@@ -389,16 +419,5 @@
     <author><name>@ClaudeDevs</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• Self-host Claude Managed Agents: Self-hosted Claude Managed Agents is in private beta: host the agent harness, sandboxes and session history in your own cloud or on-premises, and choose where requests to Claude are sent. (Source: https://x.com/ClaudeDevs/status/2120938988165091693)</summary>
-  </entry>
-  <entry>
-    <title>Claude Code › Commands &amp; settings: Lydia Hallie: Claude Code best practices (AI Engineer talk)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es"/>
-    <link rel="related" href="https://www.youtube.com/watch?v=vlfCjWuv4es"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@cjav_dev</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>@lydiahallie&#x27;s AI Engineer talk, which @cjav_dev describes as packed with updated best practices for using Claude Code well. Summary coming once the video has been watched. (Source: https://www.youtube.com/watch?v=vlfCjWuv4es)</summary>
   </entry>
 </feed>
