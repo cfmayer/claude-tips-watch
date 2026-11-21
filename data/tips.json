@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-20T04:52:51-07:00",
+ "last_run": "2026-11-21T04:58:57-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -55,6 +55,14 @@
    "tips_added": 19,
    "sources_added": 0,
    "source_summaries_updated": 1
+  },
+  {
+   "at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21",
+   "window": "2026-11-20/2026-11-21",
+   "tips_added": 6,
+   "sources_added": 3,
+   "source_summaries_updated": 0
   }
  ],
  "tips": [
@@ -1434,6 +1442,121 @@
    "added_at": "2026-11-20T04:52:51-07:00",
    "edition": "2026-11-20",
    "posted_at": "2026-11-12T16:18:20Z"
+  },
+  {
+   "id": "x-2123913235829031077",
+   "posted_at": "2026-11-20T22:55:50Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-20",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "title": "Claude now asks before destructive actions",
+   "tip": "Claude Code 2.1.330 adds a confirm-before-risky-actions policy. The system prompt now has a “measure twice, cut once” rule: Claude weighs reversibility and blast radius and asks for confirmation before destructive, hard-to-reverse, shared-state or public actions such as rm -rf, reset --hard, force-push, PR comments, Slack/email and third-party uploads, including git status/stash checks.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "permissions"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123913235829031077",
+   "source_id": "x-2123913205575496028",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123913219777380699",
+   "posted_at": "2026-11-20T22:55:46Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-20",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "title": "Sign in to an Enterprise Admin Console org",
+   "tip": "Claude Code 2.1.330 can sign in to organizations managed in Anthropic's Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization's settings and uses its cloud provider or gateway.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "enterprise"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123913219777380699",
+   "source_id": "x-2123913205575496028",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123913219777380699-2",
+   "posted_at": "2026-11-20T22:55:46Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-20",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "easel draws charts; turn it off in /config",
+   "tip": "2.1.330 adds easel, a built-in mod that draws charts when asked and under MCP metrics results (Pro, Max and, where available, Team and Enterprise, on macOS and Linux). Turn automatic charts off in `/config`.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "mods",
+    "charts"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123913219777380699",
+   "source_id": "x-2123913205575496028",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123913219777380699-3",
+   "posted_at": "2026-11-20T22:55:46Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-20",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "title": "Print the full sign-in link",
+   "tip": "Set `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` (2.1.330) to print the full sign-in link, if the short one shows an error or a script reads values from it.",
+   "source_type": "post",
+   "tags": [
+    "release",
+    "auth"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2123913219777380699",
+   "source_id": "x-2123913205575496028",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2124014299483873352",
+   "posted_at": "2026-11-21T05:37:25Z",
+   "author": "dani_avila7",
+   "date": "2026-11-20",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Skills",
+   "title": "vulnerability-scanner skill for security reviews",
+   "tip": "The vulnerability-scanner skill reviews your code for security vulnerabilities, including AI agents and MCP servers. It maps the attack surface and trust boundaries, detects prompt injection and insecure agent tools, checks for exposed secrets and vulnerable dependencies, reviews MCP servers, skills, hooks and CLAUDE.md files, flags OWASP and CI/CD risks, verifies findings to cut false positives, and reports each issue with Attack, Impact and Fix. It is read-only and never modifies your code. In his tests it activated automatically in 7/7 runs with 0 false positives across 7 decoys. Install: `npx claude-code-templates@latest --skill security/vulnerability-scanner`.",
+   "source_type": "post",
+   "tags": [
+    "skills",
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124014299483873352",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21",
+   "source_id": "x-2124014299483873352"
+  },
+  {
+   "id": "x-2123896682907664610",
+   "posted_at": "2026-11-20T21:50:03Z",
+   "author": "dani_avila7",
+   "date": "2026-11-20",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "MCP Events: agents that react without a prompt",
+   "tip": "With MCP Events, AI agents can subscribe to external events and react without waiting for a user prompt, for example starting a code review and running tests when a new PR arrives in a GitHub repository. It supports three delivery modes: Poll, Push and Webhook. In Poll mode the client discovers available events, checks the server, waits and checks again; when an event arrives it is passed to the agent runtime.",
+   "source_type": "post",
+   "tags": [
+    "mcp",
+    "events"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2123896682907664610",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21",
+   "source_id": "x-2123896682907664610"
   }
  ],
  "sources": [
@@ -1799,6 +1922,39 @@
    "date": "2026-11-15",
    "added_at": "2026-11-19T21:51:19-07:00",
    "edition": "2026-11-19"
+  },
+  {
+   "type": "video",
+   "title": "Claude Code 2.1.330 release highlights (unofficial changelog)",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "36-second animated release card (watched): it announces 2.1.330 with 142 CLI changes and 1 prompt change, and repeats the two highlights, the confirm-before-risky-actions policy and Enterprise Admin Console sign-in. The full changelog and system prompt notes are in the thread.",
+   "id": "x-2123913205575496028",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2123913205575496028",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "type": "post",
+   "title": "vulnerability-scanner skill",
+   "id": "x-2124014299483873352",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2124014299483873352",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "type": "post",
+   "title": "MCP Events is here",
+   "id": "x-2123896682907664610",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2123896682907664610",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T04:58:57-07:00",
+   "edition": "2026-11-21"
   }
  ],
  "schema_version": 2

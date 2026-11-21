@@ -5,8 +5,45 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-20T04:52:51-07:00</updated>
+  <updated>2026-11-21T04:58:57-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Skills: vulnerability-scanner skill</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124014299483873352"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2124014299483873352"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124014299483873352</id>
+    <published>2026-11-21T05:37:25Z</published>
+    <updated>2026-11-21T04:58:57-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• vulnerability-scanner skill for security reviews: The vulnerability-scanner skill reviews your code for security vulnerabilities, including AI agents and MCP servers. It maps the attack surface and trust boundaries, detects prompt injection and insecure agent tools, checks for exposed secrets and vulnerable dependencies, reviews MCP servers, skills, hooks and CLAUDE.md files, flags OWASP and CI/CD risks, verifies findings to cut false positives, and reports each issue with Attack, Impact and Fix. It is read-only and never modifies your code. In his tests it activated automatically in 7/7 runs with 0 false positives across 7 decoys. Install: `npx claude-code-templates@latest --skill security/vulnerability-scanner`. (Source: https://x.com/dani_avila7/status/2124014299483873352)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Commands &amp; settings: Claude Code 2.1.330 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123913205575496028"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2123913205575496028"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123913205575496028</id>
+    <published>2026-11-20T22:55:46Z</published>
+    <updated>2026-11-21T04:58:57-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>36-second animated release card (watched): it announces 2.1.330 with 142 CLI changes and 1 prompt change, and repeats the two highlights, the confirm-before-risky-actions policy and Enterprise Admin Console sign-in. The full changelog and system prompt notes are in the thread.
+• Sign in to an Enterprise Admin Console org: Claude Code 2.1.330 can sign in to organizations managed in Anthropic&#x27;s Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization&#x27;s settings and uses its cloud provider or gateway.
+• easel draws charts; turn it off in /config: 2.1.330 adds easel, a built-in mod that draws charts when asked and under MCP metrics results (Pro, Max and, where available, Team and Enterprise, on macOS and Linux). Turn automatic charts off in `/config`.
+• Print the full sign-in link: Set `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` (2.1.330) to print the full sign-in link, if the short one shows an error or a script reads values from it.
+• Claude now asks before destructive actions: Claude Code 2.1.330 adds a confirm-before-risky-actions policy. The system prompt now has a “measure twice, cut once” rule: Claude weighs reversibility and blast radius and asks for confirmation before destructive, hard-to-reverse, shared-state or public actions such as rm -rf, reset --hard, force-push, PR comments, Slack/email and third-party uploads, including git status/stash checks. (Source: https://x.com/ClaudeCodeLog/status/2123913205575496028)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Plugins, MCP &amp; marketplace: MCP Events is here</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2123896682907664610"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2123896682907664610"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2123896682907664610</id>
+    <published>2026-11-20T21:50:03Z</published>
+    <updated>2026-11-21T04:58:57-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• MCP Events: agents that react without a prompt: With MCP Events, AI agents can subscribe to external events and react without waiting for a user prompt, for example starting a code review and running tests when a new PR arrives in a GitHub repository. It supports three delivery modes: Poll, Push and Webhook. In Poll mode the client discovers available events, checks the server, waits and checks again; when an event arrives it is passed to the agent runtime. (Source: https://x.com/dani_avila7/status/2123896682907664610)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Hooks &amp; guardrails: Lydia Hallie: Rethinking Claude Code Best Practices</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-yt-vlfCjWuv4es"/>
