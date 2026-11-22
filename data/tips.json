@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-21T04:58:57-07:00",
+ "last_run": "2026-11-22T04:49:29-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -62,6 +62,14 @@
    "window": "2026-11-20/2026-11-21",
    "tips_added": 6,
    "sources_added": 3,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-22T04:49:29-07:00",
+   "edition": "2026-11-22",
+   "window": "2026-11-21/2026-11-22",
+   "tips_added": 2,
+   "sources_added": 2,
    "source_summaries_updated": 0
   }
  ],
@@ -1557,6 +1565,46 @@
    "added_at": "2026-11-21T04:58:57-07:00",
    "edition": "2026-11-21",
    "source_id": "x-2123896682907664610"
+  },
+  {
+   "id": "x-2124325975076823188",
+   "posted_at": "2026-11-22T02:15:55Z",
+   "author": "dani_avila7",
+   "date": "2026-11-21",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "title": "dependency-cooldown setting blocks brand-new packages",
+   "tip": "The dependency-cooldown setting for Claude Code blocks package versions published less than 7 days ago from being installed through npm, pnpm or uv. It reduces the risk of supply chain attacks, protects against slopsquatting, and requires your permission if Claude tries.",
+   "source_type": "post",
+   "tags": [
+    "settings",
+    "security",
+    "supply chain"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124325975076823188",
+   "added_at": "2026-11-22T04:49:29-07:00",
+   "edition": "2026-11-22",
+   "source_id": "x-2124325975076823188"
+  },
+  {
+   "id": "x-2124359426035356008",
+   "posted_at": "2026-11-22T04:28:50Z",
+   "author": "dani_avila7",
+   "date": "2026-11-21",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Two ways to use the easel chart mod",
+   "tip": "easel is a built-in mod in Claude Code 2.1.330 that renders charts directly inside your conversations. Use it on demand by asking Claude to chart data from JSON, CSV, tables or query results, or let it run automatically when an MCP returns time-series metrics.",
+   "source_type": "post",
+   "tags": [
+    "mods",
+    "charts",
+    "2.1.330"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124359426035356008",
+   "added_at": "2026-11-22T04:49:29-07:00",
+   "edition": "2026-11-22",
+   "source_id": "x-2124359426035356008"
   }
  ],
  "sources": [
@@ -1955,6 +2003,26 @@
    "date": "2026-11-20",
    "added_at": "2026-11-21T04:58:57-07:00",
    "edition": "2026-11-21"
+  },
+  {
+   "type": "post",
+   "title": "dependency-cooldown: a must-have Claude Code setting",
+   "id": "x-2124325975076823188",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2124325975076823188",
+   "date": "2026-11-21",
+   "added_at": "2026-11-22T04:49:29-07:00",
+   "edition": "2026-11-22"
+  },
+  {
+   "type": "post",
+   "title": "easel, a new built-in mod in Claude Code 2.1.330",
+   "id": "x-2124359426035356008",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2124359426035356008",
+   "date": "2026-11-21",
+   "added_at": "2026-11-22T04:49:29-07:00",
+   "edition": "2026-11-22"
   }
  ],
  "schema_version": 2

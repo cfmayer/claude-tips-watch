@@ -5,8 +5,30 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-21T04:58:57-07:00</updated>
+  <updated>2026-11-22T04:49:29-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: easel, a new built-in mod in Claude Code 2.1.330</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124359426035356008"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2124359426035356008"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124359426035356008</id>
+    <published>2026-11-22T04:28:50Z</published>
+    <updated>2026-11-22T04:49:29-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-22"/>
+    <summary>• Two ways to use the easel chart mod: easel is a built-in mod in Claude Code 2.1.330 that renders charts directly inside your conversations. Use it on demand by asking Claude to chart data from JSON, CSV, tables or query results, or let it run automatically when an MCP returns time-series metrics. (Source: https://x.com/dani_avila7/status/2124359426035356008)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Hooks &amp; guardrails: dependency-cooldown: a must-have Claude Code setting</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124325975076823188"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2124325975076823188"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124325975076823188</id>
+    <published>2026-11-22T02:15:55Z</published>
+    <updated>2026-11-22T04:49:29-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-22"/>
+    <summary>• dependency-cooldown setting blocks brand-new packages: The dependency-cooldown setting for Claude Code blocks package versions published less than 7 days ago from being installed through npm, pnpm or uv. It reduces the risk of supply chain attacks, protects against slopsquatting, and requires your permission if Claude tries. (Source: https://x.com/dani_avila7/status/2124325975076823188)</summary>
+  </entry>
   <entry>
     <title>Subagents, skills &amp; plugins › Skills: vulnerability-scanner skill</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124014299483873352"/>
