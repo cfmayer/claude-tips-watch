@@ -5,8 +5,19 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-22T04:49:29-07:00</updated>
+  <updated>2026-11-23T04:48:16-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude Code › Commands &amp; settings: Disabling Auto charts in Claude Code</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124568760145125427"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2124568760145125427"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124568760145125427</id>
+    <published>2026-11-22T18:20:39Z</published>
+    <updated>2026-11-23T04:48:16-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>• Turn off automatic charts in /config: If you don&#x27;t want the easel mod drawing charts automatically, run /config and look for the Auto charts option to disable it. (Source: https://x.com/dani_avila7/status/2124568760145125427)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Desktop, themes &amp; simulators: easel, a new built-in mod in Claude Code 2.1.330</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124359426035356008"/>

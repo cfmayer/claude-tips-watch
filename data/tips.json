@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-22T04:49:29-07:00",
+ "last_run": "2026-11-23T04:48:16-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -70,6 +70,14 @@
    "window": "2026-11-21/2026-11-22",
    "tips_added": 2,
    "sources_added": 2,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-23T04:48:16-07:00",
+   "edition": "2026-11-23",
+   "window": "2026-11-22/2026-11-23",
+   "tips_added": 1,
+   "sources_added": 1,
    "source_summaries_updated": 0
   }
  ],
@@ -1605,6 +1613,27 @@
    "added_at": "2026-11-22T04:49:29-07:00",
    "edition": "2026-11-22",
    "source_id": "x-2124359426035356008"
+  },
+  {
+   "id": "x-2124568760145125427",
+   "posted_at": "2026-11-22T18:20:39Z",
+   "author": "dani_avila7",
+   "date": "2026-11-22",
+   "topic": "Claude Code",
+   "subcategory": "Commands & settings",
+   "title": "Turn off automatic charts in /config",
+   "tip": "If you don't want the easel mod drawing charts automatically, run /config and look for the Auto charts option to disable it.",
+   "source_type": "post",
+   "tags": [
+    "settings",
+    "mods",
+    "charts",
+    "/config"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124568760145125427",
+   "added_at": "2026-11-23T04:48:16-07:00",
+   "edition": "2026-11-23",
+   "source_id": "x-2124568760145125427"
   }
  ],
  "sources": [
@@ -2023,6 +2052,16 @@
    "date": "2026-11-21",
    "added_at": "2026-11-22T04:49:29-07:00",
    "edition": "2026-11-22"
+  },
+  {
+   "type": "post",
+   "title": "Disabling Auto charts in Claude Code",
+   "id": "x-2124568760145125427",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2124568760145125427",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T04:48:16-07:00",
+   "edition": "2026-11-23"
   }
  ],
  "schema_version": 2
