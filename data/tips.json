@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-23T04:48:16-07:00",
+ "last_run": "2026-11-24T04:55:33-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -78,6 +78,14 @@
    "window": "2026-11-22/2026-11-23",
    "tips_added": 1,
    "sources_added": 1,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "window": "2026-11-23/2026-11-24",
+   "tips_added": 17,
+   "sources_added": 6,
    "source_summaries_updated": 0
   }
  ],
@@ -1634,6 +1642,368 @@
    "added_at": "2026-11-23T04:48:16-07:00",
    "edition": "2026-11-23",
    "source_id": "x-2124568760145125427"
+  },
+  {
+   "id": "x-2124959436640858475",
+   "posted_at": "2026-11-23T20:13:04Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Type /ship to open, review and watch a pull request",
+   "tip": "In Claude Code, type /ship to open a pull request if there is none, review it in the session, then keep watching it. In the demo the review flags an issue and offers Apply fixes or Walk through in changes, then Claude tests, commits and pushes.",
+   "source_type": "video",
+   "tags": [
+    "/ship",
+    "pull requests",
+    "code review",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+   "video_timestamp": "0:09",
+   "source_id": "x-2124959436640858475",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124959436640858475-2",
+   "posted_at": "2026-11-23T20:13:04Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Let /ship handle failed checks and review comments",
+   "tip": "After pushing, /ship keeps watching the PR with scheduled check-ins: in the demo it fixes a failing CI test and answers a reviewer's comment, then reports ready once checks pass and comments are answered. Merging stays with you, within your permissions and the repository's branch rules.",
+   "source_type": "video",
+   "tags": [
+    "/ship",
+    "CI",
+    "pull requests",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+   "video_timestamp": "0:28",
+   "source_id": "x-2124959436640858475",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124960088888582176",
+   "posted_at": "2026-11-23T20:15:39Z",
+   "author": "cjav_dev",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Claude Ship vs. the /ship skill",
+   "tip": "There are two pieces: Claude Ship (beta) for Team and Enterprise, which you turn on in settings and which can review PRs, work on fixes and approve the ones your team's policy allows; and the /ship skill, which anyone can use and which ships with the latest Claude Code version.",
+   "source_type": "post",
+   "tags": [
+    "/ship",
+    "Team",
+    "Enterprise",
+    "skills"
+   ],
+   "source_url": "https://x.com/cjav_dev/status/2124960088888582176",
+   "source_id": "x-2124959436640858475",
+   "credit": "Clarified by @cjav_dev",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124978802006851961",
+   "posted_at": "2026-11-23T21:30:01Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Side panel tools now open as tabs",
+   "tip": "In Claude Code on desktop, Files, Changes, Terminal and the other tools open as tabs beside your session. You can move a tab to see several at once or pop it out into its own window. Rolling out on Mac first; Windows and Linux are coming.",
+   "source_type": "post",
+   "tags": [
+    "desktop",
+    "side panel",
+    "tabs"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124978802006851961",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124978802006851961"
+  },
+  {
+   "id": "x-2124978802006851961-2",
+   "posted_at": "2026-11-23T21:30:01Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Side panel shortcuts and the + tab menu",
+   "tip": "Open side-panel tools with shortcuts: Changes ⇧⌘D, Browser ⇧⌘B, Files ⇧⌘F, Terminal ⌘J, Side chat ⌘;. The + button in the tab bar adds a tab; in the demo the Browser tab opens the running dev server at localhost:3000.",
+   "source_type": "video",
+   "tags": [
+    "desktop",
+    "shortcuts",
+    "browser",
+    "terminal",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124978802006851961",
+   "video_timestamp": "0:03",
+   "source_id": "x-2124978802006851961",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124978802006851961-3",
+   "posted_at": "2026-11-23T21:30:01Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "Desktop, themes & simulators",
+   "title": "Split tabs to watch logs while you test",
+   "tip": "Click the layout icon at the top right of a tab to Move it (left, right, top or bottom), Fill and arrange, or Open in new window. In the demo, moving Terminal (running tail -f logs/server.log) to the bottom lets you click Add to cart in the Browser tab and watch the server log update below it.",
+   "source_type": "video",
+   "tags": [
+    "desktop",
+    "layout",
+    "terminal",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124978802006851961",
+   "video_timestamp": "0:09",
+   "source_id": "x-2124978802006851961",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124970294523945328",
+   "posted_at": "2026-11-23T20:56:12Z",
+   "author": "claudeai",
+   "date": "2026-11-23",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Connectors and skills are now one thing: plugins",
+   "tip": "In Claude, connectors (to your tools) and skills come together as plugins, so one install can connect a tool, teach a skill, or both. Live on Free, Pro, Max and Ultra, with Team and Enterprise coming. Browse 10,000+ plugins at claude.ai/plugins.",
+   "source_type": "post",
+   "tags": [
+    "plugins",
+    "connectors",
+    "skills"
+   ],
+   "source_url": "https://x.com/claudeai/status/2124970294523945328",
+   "related_urls": [
+    "https://claude.ai/plugins"
+   ],
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124970294523945328"
+  },
+  {
+   "id": "x-2124930253344948518",
+   "posted_at": "2026-11-23T18:17:06Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Data retention & compliance",
+   "title": "Zero data retention with Enterprise Frontier Safeguards",
+   "tip": "ZDR with Enterprise Frontier Safeguards is in public beta for eligible orgs on the Claude Platform: encrypted copies of your Messages API traffic go to your own cloud storage, and automated checks look for misuse across requests and flag serious risks for your team to review. Useful if your company requires zero data retention and you still want to use Fable.",
+   "source_type": "post",
+   "tags": [
+    "ZDR",
+    "enterprise",
+    "Messages API"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2124930253344948518",
+   "related_urls": [
+    "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
+    "https://x.com/cjav_dev/status/2124960630952079831"
+   ],
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124930253344948518"
+  },
+  {
+   "id": "x-2124967784291377195",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Claude Platform OAuth: let customers pay for their own usage",
+   "tip": "With Claude Platform OAuth (beta, Linked Billing), a customer links their Claude Console organization to your app once and sets a monthly spend limit; Claude calls they start in your app are then billed to their organization. It is not sign-in with a Claude.ai plan: Pro or Max can't be linked, the org needs API billing (prepaid credits or invoice), and the person linking needs the Admin or Billing role. There is no client secret.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "Linked Billing",
+    "Console"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2124967784291377195-2",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Test OAuth with a second account and test users",
+   "tip": "Create the app under Organization → Customers → OAuth apps (connection type organization_shared). The org that owns the app can't link it, so test with a second Claude account using a different email and its own Console org with prepaid credits. In Testing mode only listed test users can link (max USD 50/month each); add them and your callback URL on the Settings tab (http://localhost works). Publishing needs a DNS record and an Anthropic review.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "testing",
+    "Console"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2124967784291377195-3",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Enable both billing:attribution and offline_access",
+   "tip": "Turn on both the billing:attribution and offline_access permissions for the OAuth app. With offline_access off, the authorization request fails with invalid_scope, and you also don't get the long-lived token that keeps access without asking the customer to approve again.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "scopes",
+    "errors"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2124967784291377195-4",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Use an issuer with inline keys instead of a cloud identity provider",
+   "tip": "You don't need AWS, GCP, Okta or similar for workload identity: under Keys → Workload identity → Issuers, register an issuer with inline keys (the URL is just a name and doesn't need to exist) and paste your public key. The key editor rejects the usual {\"keys\": [...]} format; paste only the array. Then in the app's Client authentication pick that issuer, a subject and the audience https://auth.claude.com. If you sign in Node, use ECDSA signatures in ieee-p1363 format or you get jwt_signature_invalid.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "workload identity",
+    "JWT",
+    "Node"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2124967784291377195-5",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Set the default workspace before anyone links",
+   "tip": "Billed calls need a service account (Keys → Service accounts) plus a federation rule on the same issuer with the audience https://api.anthropic.com. Choose it as the Operator service account, then set \"Default workspace for platform auth mode OAuth tokens\" right below it. Without that field the last link step fails with unauthorized_client, and since the customer's code lasts only 5 minutes you lose a whole approval round.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "service account",
+    "errors"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2124967784291377195-6",
+   "posted_at": "2026-11-23T20:46:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "OAuth backend rules: rotate refresh tokens, bind state",
+   "tip": "Save the newest refresh token every time because it rotates on each use. Check that the returned state is yours and bind it to the browser that started the flow (for example with an HttpOnly cookie). Before approval a billed call returns 403 user_profile_billing_not_authorized, a handy check. Batches and billable code execution aren't supported, and the customer's ZDR or BAA doesn't cover these calls. Customers can revoke from Keys → Linked platforms.",
+   "source_type": "article",
+   "tags": [
+    "OAuth",
+    "security",
+    "refresh token"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24",
+   "source_id": "x-2124967784291377195"
+  },
+  {
+   "id": "x-2125058039673942261",
+   "posted_at": "2026-11-24T02:44:52Z",
+   "author": "dani_avila7",
+   "date": "2026-11-23",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "A skill that walks Claude through Linked Billing setup",
+   "tip": "@dani_avila7 built a Claude Platform OAuth skill that walks Claude through integrating Linked Billing into your app. Install it and ask Claude to set up Linked Billing; with the Chrome extension, Claude can ask for browser access to help fill out the Console steps.",
+   "source_type": "post",
+   "tags": [
+    "skills",
+    "OAuth",
+    "Chrome extension"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125058039673942261",
+   "source_id": "x-2124967784291377195",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124985109853929758",
+   "posted_at": "2026-11-23T21:55:05Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "2.1.331 drops the risky-action confirmation rule",
+   "tip": "Claude Code 2.1.331 (135 CLI changes, 1 system prompt change) removes the system-prompt risky-action confirmation, so agents may run previously blocked risky steps automatically. Review your permission and deny settings if you relied on that prompt.",
+   "source_type": "video",
+   "tags": [
+    "release",
+    "permissions",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2124985109853929758",
+   "video_timestamp": "0:15",
+   "source_id": "x-2124985109853929758",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124985109853929758-2",
+   "posted_at": "2026-11-23T21:55:05Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-23",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "2.1.331: Code Mode in cloud terminal sessions, MCP hang fix",
+   "tip": "In 2.1.331, terminal sessions add Code Mode on cloud platforms with syntax highlighting, and MCP tool calls no longer hang up to 30 minutes on malformed local or WebSocket replies.",
+   "source_type": "video",
+   "tags": [
+    "release",
+    "Code Mode",
+    "MCP",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2124985109853929758",
+   "video_timestamp": "0:21",
+   "source_id": "x-2124985109853929758",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
   }
  ],
  "sources": [
@@ -2062,6 +2432,75 @@
    "date": "2026-11-22",
    "added_at": "2026-11-23T04:48:16-07:00",
    "edition": "2026-11-23"
+  },
+  {
+   "type": "video",
+   "title": "Introducing Claude Ship (beta) and /ship",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "46-second animated demo (watched), labeled an illustrative example: typing /ship opens and reviews a PR, applies a review fix, then keeps watching the PR, fixing a failed check and answering a review comment until it is ready; merging is left to you.",
+   "id": "x-2124959436640858475",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "type": "video",
+   "title": "Redesigned side panel in Claude Code desktop",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "15-second screen demo (watched): opening Files, Browser and Terminal as tabs with the + menu and shortcuts, then moving Terminal to the bottom to watch server logs while testing in the Browser tab.",
+   "id": "x-2124978802006851961",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2124978802006851961",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "type": "post",
+   "title": "Connectors and skills come together as plugins",
+   "id": "x-2124970294523945328",
+   "author": "claudeai",
+   "url": "https://x.com/claudeai/status/2124970294523945328",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "type": "post",
+   "title": "Zero data retention with Enterprise Frontier Safeguards (beta)",
+   "id": "x-2124930253344948518",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2124930253344948518",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "type": "article",
+   "title": "Claude Platform OAuth: Step-by-step Setup Guide",
+   "id": "x-2124967784291377195",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2124967784291377195",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "type": "video",
+   "title": "Claude Code 2.1.331 release highlights (unofficial changelog)",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "43-second animated release card (watched): 2.1.331 with 135 CLI changes and 1 prompt change; three highlights: risky-action confirmation removed from the system prompt, Code Mode for terminal sessions on cloud platforms, and a fix for MCP tool calls hanging up to 30 minutes.",
+   "id": "x-2124985109853929758",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2124985109853929758",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T04:55:33-07:00",
+   "edition": "2026-11-24"
   }
  ],
  "schema_version": 2

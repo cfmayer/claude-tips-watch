@@ -5,8 +5,88 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-23T04:48:16-07:00</updated>
+  <updated>2026-11-24T04:55:33-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude API &amp; platform › Auth &amp; billing: Claude Platform OAuth: Step-by-step Setup Guide</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124967784291377195"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2124967784291377195"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124967784291377195</id>
+    <published>2026-11-23T20:46:14Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• Claude Platform OAuth: let customers pay for their own usage: With Claude Platform OAuth (beta, Linked Billing), a customer links their Claude Console organization to your app once and sets a monthly spend limit; Claude calls they start in your app are then billed to their organization. It is not sign-in with a Claude.ai plan: Pro or Max can&#x27;t be linked, the org needs API billing (prepaid credits or invoice), and the person linking needs the Admin or Billing role. There is no client secret.
+• Test OAuth with a second account and test users: Create the app under Organization → Customers → OAuth apps (connection type organization_shared). The org that owns the app can&#x27;t link it, so test with a second Claude account using a different email and its own Console org with prepaid credits. In Testing mode only listed test users can link (max USD 50/month each); add them and your callback URL on the Settings tab (http://localhost works). Publishing needs a DNS record and an Anthropic review.
+• Enable both billing:attribution and offline_access: Turn on both the billing:attribution and offline_access permissions for the OAuth app. With offline_access off, the authorization request fails with invalid_scope, and you also don&#x27;t get the long-lived token that keeps access without asking the customer to approve again.
+• Use an issuer with inline keys instead of a cloud identity provider: You don&#x27;t need AWS, GCP, Okta or similar for workload identity: under Keys → Workload identity → Issuers, register an issuer with inline keys (the URL is just a name and doesn&#x27;t need to exist) and paste your public key. The key editor rejects the usual {&quot;keys&quot;: [...]} format; paste only the array. Then in the app&#x27;s Client authentication pick that issuer, a subject and the audience https://auth.claude.com. If you sign in Node, use ECDSA signatures in ieee-p1363 format or you get jwt_signature_invalid.
+• Set the default workspace before anyone links: Billed calls need a service account (Keys → Service accounts) plus a federation rule on the same issuer with the audience https://api.anthropic.com. Choose it as the Operator service account, then set &quot;Default workspace for platform auth mode OAuth tokens&quot; right below it. Without that field the last link step fails with unauthorized_client, and since the customer&#x27;s code lasts only 5 minutes you lose a whole approval round.
+• OAuth backend rules: rotate refresh tokens, bind state: Save the newest refresh token every time because it rotates on each use. Check that the returned state is yours and bind it to the browser that started the flow (for example with an HttpOnly cookie). Before approval a billed call returns 403 user_profile_billing_not_authorized, a handy check. Batches and billable code execution aren&#x27;t supported, and the customer&#x27;s ZDR or BAA doesn&#x27;t cover these calls. Customers can revoke from Keys → Linked platforms.
+• A skill that walks Claude through Linked Billing setup: @dani_avila7 built a Claude Platform OAuth skill that walks Claude through integrating Linked Billing into your app. Install it and ask Claude to set up Linked Billing; with the Chrome extension, Claude can ask for browser access to help fill out the Console steps. (Source: https://x.com/dani_avila7/status/2124967784291377195)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.331 release highlights (unofficial changelog)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124985109853929758"/>
+    <link rel="related" href="https://x.com/ClaudeCodeLog/status/2124985109853929758"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124985109853929758</id>
+    <published>2026-11-23T21:55:05Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@ClaudeCodeLog</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>43-second animated release card (watched): 2.1.331 with 135 CLI changes and 1 prompt change; three highlights: risky-action confirmation removed from the system prompt, Code Mode for terminal sessions on cloud platforms, and a fix for MCP tool calls hanging up to 30 minutes.
+• 0:15 2.1.331 drops the risky-action confirmation rule: Claude Code 2.1.331 (135 CLI changes, 1 system prompt change) removes the system-prompt risky-action confirmation, so agents may run previously blocked risky steps automatically. Review your permission and deny settings if you relied on that prompt.
+• 0:21 2.1.331: Code Mode in cloud terminal sessions, MCP hang fix: In 2.1.331, terminal sessions add Code Mode on cloud platforms with syntax highlighting, and MCP tool calls no longer hang up to 30 minutes on malformed local or WebSocket replies. (Source: https://x.com/ClaudeCodeLog/status/2124985109853929758)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › Desktop, themes &amp; simulators: Redesigned side panel in Claude Code desktop</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124978802006851961"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2124978802006851961"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124978802006851961</id>
+    <published>2026-11-23T21:30:01Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>15-second screen demo (watched): opening Files, Browser and Terminal as tabs with the + menu and shortcuts, then moving Terminal to the bottom to watch server logs while testing in the Browser tab.
+• Side panel tools now open as tabs: In Claude Code on desktop, Files, Changes, Terminal and the other tools open as tabs beside your session. You can move a tab to see several at once or pop it out into its own window. Rolling out on Mac first; Windows and Linux are coming.
+• 0:03 Side panel shortcuts and the + tab menu: Open side-panel tools with shortcuts: Changes ⇧⌘D, Browser ⇧⌘B, Files ⇧⌘F, Terminal ⌘J, Side chat ⌘;. The + button in the tab bar adds a tab; in the demo the Browser tab opens the running dev server at localhost:3000.
+• 0:09 Split tabs to watch logs while you test: Click the layout icon at the top right of a tab to Move it (left, right, top or bottom), Fill and arrange, or Open in new window. In the demo, moving Terminal (running tail -f logs/server.log) to the bottom lets you click Add to cart in the Browser tab and watch the server log update below it. (Source: https://x.com/ClaudeDevs/status/2124978802006851961)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Plugins, MCP &amp; marketplace: Connectors and skills come together as plugins</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124970294523945328"/>
+    <link rel="related" href="https://x.com/claudeai/status/2124970294523945328"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124970294523945328</id>
+    <published>2026-11-23T20:56:12Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@claudeai</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• Connectors and skills are now one thing: plugins: In Claude, connectors (to your tools) and skills come together as plugins, so one install can connect a tool, teach a skill, or both. Live on Free, Pro, Max and Ultra, with Team and Enterprise coming. Browse 10,000+ plugins at claude.ai/plugins. (Source: https://x.com/claudeai/status/2124970294523945328)</summary>
+  </entry>
+  <entry>
+    <title>Claude Code › PR review &amp; shipping: Introducing Claude Ship (beta) and /ship</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124959436640858475"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2124959436640858475"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124959436640858475</id>
+    <published>2026-11-23T20:13:04Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>46-second animated demo (watched), labeled an illustrative example: typing /ship opens and reviews a PR, applies a review fix, then keeps watching the PR, fixing a failed check and answering a review comment until it is ready; merging is left to you.
+• Claude Ship vs. the /ship skill: There are two pieces: Claude Ship (beta) for Team and Enterprise, which you turn on in settings and which can review PRs, work on fixes and approve the ones your team&#x27;s policy allows; and the /ship skill, which anyone can use and which ships with the latest Claude Code version.
+• 0:09 Type /ship to open, review and watch a pull request: In Claude Code, type /ship to open a pull request if there is none, review it in the session, then keep watching it. In the demo the review flags an issue and offers Apply fixes or Walk through in changes, then Claude tests, commits and pushes.
+• 0:28 Let /ship handle failed checks and review comments: After pushing, /ship keeps watching the PR with scheduled check-ins: in the demo it fixes a failing CI test and answers a reviewer&#x27;s comment, then reports ready once checks pass and comments are answered. Merging stays with you, within your permissions and the repository&#x27;s branch rules. (Source: https://x.com/ClaudeDevs/status/2124959436640858475)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Data retention &amp; compliance: Zero data retention with Enterprise Frontier Safeguards (beta)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124930253344948518"/>
+    <link rel="related" href="https://x.com/ClaudeDevs/status/2124930253344948518"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2124930253344948518</id>
+    <published>2026-11-23T18:17:06Z</published>
+    <updated>2026-11-24T04:55:33-07:00</updated>
+    <author><name>@ClaudeDevs</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• Zero data retention with Enterprise Frontier Safeguards: ZDR with Enterprise Frontier Safeguards is in public beta for eligible orgs on the Claude Platform: encrypted copies of your Messages API traffic go to your own cloud storage, and automated checks look for misuse across requests and flag serious risks for your team to review. Useful if your company requires zero data retention and you still want to use Fable. (Source: https://x.com/ClaudeDevs/status/2124930253344948518)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Commands &amp; settings: Disabling Auto charts in Claude Code</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2124568760145125427"/>

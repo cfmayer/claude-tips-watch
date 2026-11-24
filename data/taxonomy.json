@@ -59,6 +59,10 @@
     "2.1.",
     "changelog"
    ]
+  },
+  {
+   "name": "PR review & shipping",
+   "keywords": []
   }
  ],
  "Subagents, skills & plugins": [
@@ -177,6 +181,10 @@
     "new model",
     "cost per task"
    ]
+  },
+  {
+   "name": "Data retention & compliance",
+   "keywords": []
   }
  ],
  "Verification & security": [
