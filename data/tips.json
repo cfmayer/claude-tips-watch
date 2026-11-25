@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-24T04:55:33-07:00",
+ "last_run": "2026-11-25T04:52:54-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -86,6 +86,14 @@
    "window": "2026-11-23/2026-11-24",
    "tips_added": 17,
    "sources_added": 6,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "window": "2026-11-24/2026-11-25",
+   "tips_added": 21,
+   "sources_added": 7,
    "source_summaries_updated": 0
   }
  ],
@@ -2004,6 +2012,475 @@
    "source_id": "x-2124985109853929758",
    "added_at": "2026-11-24T04:55:33-07:00",
    "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2125315491522650299",
+   "posted_at": "2026-11-24T19:47:54Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude apps",
+   "subcategory": "Desktop apps & artifacts",
+   "title": "Install an artifact as its own desktop app",
+   "tip": "In the Claude desktop app, click the arrow next to the artifact's title at the top of the artifact pane, choose Install as app (Beta), then Install. The artifact gets its own window and dock icon and opens like any other app. It can't reach your files or run programs unless you allow it; it can use your connectors and, if you allow it, send notifications or add a menu bar item. Beta on Mac and Windows.",
+   "source_type": "video",
+   "tags": [
+    "artifacts",
+    "desktop app",
+    "Install as app",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125315491522650299",
+   "video_timestamp": "0:02",
+   "source_id": "x-2125315491522650299",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125393139481587783",
+   "posted_at": "2026-11-25T00:56:27Z",
+   "author": "lydiahallie",
+   "date": "2026-11-24",
+   "topic": "Claude apps",
+   "subcategory": "Desktop apps & artifacts",
+   "title": "Artifact apps have storage and use the viewer's connectors",
+   "tip": "On paid plans, artifacts come with personal and shared storage, which makes them handy for small internal tools. By default an artifact uses the connectors of whoever opens it, so the same app shows each person their own data plus anything shared with the whole team.",
+   "source_type": "post",
+   "tags": [
+    "artifacts",
+    "storage",
+    "connectors",
+    "teams"
+   ],
+   "source_url": "https://x.com/lydiahallie/status/2125393139481587783",
+   "source_id": "x-2125315491522650299",
+   "credit": "Added by @lydiahallie",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125341947179290938",
+   "posted_at": "2026-11-24T21:33:01Z",
+   "author": "felixrieseberg",
+   "date": "2026-11-24",
+   "topic": "Claude apps",
+   "subcategory": "Desktop apps & artifacts",
+   "title": "First artifact app to try: a desktop pet",
+   "tip": "A quick way to try artifact apps: ask Claude \"Build me a desktop pet as an artifact app. Make it a cat/dog/bunny/enterprise-ready CRM\". It takes only a few minutes.",
+   "source_type": "post",
+   "tags": [
+    "artifacts",
+    "desktop app",
+    "prompt"
+   ],
+   "source_url": "https://x.com/felixrieseberg/status/2125341947179290938",
+   "related_urls": [
+    "https://claude.ai/artifact/75cGBx19aZZXjWdbqUhmy1"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125341947179290938"
+  },
+  {
+   "id": "x-2125406441796206946",
+   "posted_at": "2026-11-25T01:49:18Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "2.1.332 asks before risky or destructive actions again",
+   "tip": "Claude Code 2.1.332 (150 CLI changes, 1 system prompt change) defaults to confirmation for risky or destructive actions. The new \"execute with care\" prompt rule has Claude judge reversibility and blast radius: local, reversible steps go ahead, while destructive, hard-to-undo, shared-state or third-party upload actions get a confirmation request (with extra git status/stash checks). This reverses the 2.1.331 change.",
+   "source_type": "video",
+   "tags": [
+    "release",
+    "permissions",
+    "confirmation",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2125406441796206946",
+   "video_timestamp": "0:15",
+   "source_id": "x-2125406441796206946",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125406441796206946-2",
+   "posted_at": "2026-11-25T01:49:18Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Skills served by MCP servers show up as server:skill",
+   "tip": "From 2.1.332, skills hosted on MCP servers (beta) appear in the / menu as server:skill; your other skills keep their names.",
+   "source_type": "video",
+   "tags": [
+    "release",
+    "MCP",
+    "skills",
+    "video"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2125406441796206946",
+   "video_timestamp": "0:21",
+   "source_id": "x-2125406441796206946",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125406455826145354",
+   "posted_at": "2026-11-25T01:49:21Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "New PreSkillShellCommand hook can block a skill's inline shell",
+   "tip": "2.1.332 adds a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads. On 2.1.331 and older, a settings file that names this hook opens a dialog at start.",
+   "source_type": "post",
+   "tags": [
+    "hooks",
+    "skills",
+    "security"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2125406455826145354",
+   "source_id": "x-2125406441796206946",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125406455826145354-2",
+   "posted_at": "2026-11-25T01:49:21Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "/permissions now rejects rules that would be skipped",
+   "tip": "In 2.1.332, /permissions refuses a rule that would be ignored at the next start, such as rm -rf with no tool name, and shows why, so check your rules include the tool name.",
+   "source_type": "post",
+   "tags": [
+    "permissions",
+    "/permissions"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2125406455826145354",
+   "source_id": "x-2125406441796206946",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125406455826145354-3",
+   "posted_at": "2026-11-25T01:49:21Z",
+   "author": "ClaudeCodeLog",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "Releases & changelog",
+   "title": "Self-hosted runners: OAuth tokens can now start with oat02-",
+   "tip": "On self-hosted runners, CLAUDE_CODE_OAUTH_TOKEN's prefix can now end in oat02- as well as oat01-. Update proxy rules and log scrubbers that match oat01-, and mask the whole value.",
+   "source_type": "post",
+   "tags": [
+    "self-hosted runner",
+    "OAuth",
+    "security"
+   ],
+   "source_url": "https://x.com/ClaudeCodeLog/status/2125406455826145354",
+   "source_id": "x-2125406441796206946",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125289794871963935",
+   "posted_at": "2026-11-24T18:05:47Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Skills over MCP: servers ship their own skills",
+   "tip": "MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box. Announced for MCP's second birthday together with Tasks.",
+   "source_type": "post",
+   "tags": [
+    "MCP",
+    "skills",
+    "Skills over MCP"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125289794871963935",
+   "credit": "Explained by @bcherny",
+   "related_urls": [
+    "https://x.com/bcherny/status/2125292098165612585"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125289794871963935"
+  },
+  {
+   "id": "x-2125346778585158026",
+   "posted_at": "2026-11-24T21:52:13Z",
+   "author": "dani_avila7",
+   "date": "2026-11-24",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "How a skill served over MCP loads in Claude Code",
+   "tip": "In the aitmpl demo the server lists its skills with descriptions and a sha256 digest per file; they show as aitmpl:component-review. Type /aitmpl:component-review or just ask for something matching its description. Claude Code reads that skill's SKILL.md from the server and fetches supporting files only when the skill asks for them. The instructions load without a prompt in auto mode; otherwise you allow that version first.",
+   "source_type": "video",
+   "tags": [
+    "MCP",
+    "skills",
+    "Skills over MCP",
+    "video"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125346778585158026",
+   "video_timestamp": "0:01",
+   "source_id": "x-2125346778585158026",
+   "related_urls": [
+    "https://aitmpl.com"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125346778585158026-2",
+   "posted_at": "2026-11-24T21:52:13Z",
+   "author": "dani_avila7",
+   "date": "2026-11-24",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Publish your own Skills-over-MCP component with Claude's help",
+   "tip": "Skills over MCP is on aitmpl.com. To publish your own, fork the repo and ask Claude how to add a component with these capabilities; it guides you through the process, including validation before publication.",
+   "source_type": "post",
+   "tags": [
+    "MCP",
+    "skills",
+    "aitmpl",
+    "Claude Code Templates"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125346778585158026",
+   "related_urls": [
+    "https://aitmpl.com"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125346778585158026"
+  },
+  {
+   "id": "x-2125368426596065592",
+   "posted_at": "2026-11-24T23:18:14Z",
+   "author": "dani_avila7",
+   "date": "2026-11-24",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Use MCP elicitations instead of letting the model ask questions",
+   "tip": "With MCP elicitation, the server sends a JSON Schema and the host renders it as an interactive form, returning structured data straight to the server. That builds structured workflows and saves tokens compared with having the LLM collect the information from the user.",
+   "source_type": "post",
+   "tags": [
+    "MCP",
+    "elicitation",
+    "JSON Schema"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125368426596065592",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125368426596065592"
+  },
+  {
+   "id": "x-2125374998831358186",
+   "posted_at": "2026-11-24T23:44:21Z",
+   "author": "dani_avila7",
+   "date": "2026-11-24",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Elicitation forms in Claude Code",
+   "tip": "When an MCP server requests information, Claude Code renders an interactive form from the server's JSON Schema. In the example the server asks you to pick a component type and category before the tool call continues.",
+   "source_type": "post",
+   "tags": [
+    "MCP",
+    "elicitation",
+    "Claude Code"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125374998831358186",
+   "source_id": "x-2125368426596065592",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125365668463993091",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Run /code-review before you push",
+   "tip": "/code-review checks your branch's commits and uncommitted changes for correctness bugs. Variants: /code-review high 1234 (PR 1234 at high effort), --fix (apply findings to the working tree), --comment 1234 (post findings on the PR), ultra (deeper review in the cloud; needs a claude.ai login and can be billed separately). Effort runs low to max and Claude remembers the last level. Commit before --fix in a background review: /rewind may not catch those edits.",
+   "source_type": "article",
+   "tags": [
+    "/code-review",
+    "effort",
+    "review"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-2",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Check git status before /ship",
+   "tip": "If there's no PR yet, /ship commits pending changes as if you ran git add -A (respecting .gitignore), pushes, opens the PR as you, reviews it and fixes valid findings. It won't commit secret-looking files or rule files (CLAUDE.md, REVIEW.md, .claude/, .github/), and in a public repo it commits nothing, so commit those yourself. Options: /ship high, /ship 41 (PR #41), /ship +my-lint-bot (also read that bot's comments), /ship stop.",
+   "source_type": "article",
+   "tags": [
+    "/ship",
+    "git",
+    "pull requests"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-3",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "What the /ship watch needs to keep running",
+   "tip": "The watch runs as you on your machine and quota for up to seven days: keep the session open and the machine awake, run gh auth login first, and it only watches PRs you opened. Outside auto mode it stops at every prompt; it won't run in bypass-permissions mode, and on Windows it doesn't start. Give it its own checkout (use a worktree for your next task). A PreToolUse or PermissionRequest hook on Bash in the repo's .claude/settings.json prevents the watch.",
+   "source_type": "article",
+   "tags": [
+    "/ship",
+    "worktree",
+    "gh",
+    "auto mode"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-4",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Only run the watch on repos where you trust every merger",
+   "tip": "The watch merges the base branch and runs your tests, so anyone who can land changes on the base branch can run commands on your machine. Claude won't merge or force-push, and its commits skip rule files, but git hooks don't run on its commits, so put required checks in CI and branch rules. Run /ship terms before your first use.",
+   "source_type": "article",
+   "tags": [
+    "/ship",
+    "security",
+    "branch protection"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-5",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "/steward: see an existing PR through without re-reviewing",
+   "tip": "Check out the branch and run /steward 41 (or plain /steward for the current branch's PR) to run only the watch: fix failing checks, resolve conflicts and answer comments, with no review first. Stop it with /steward stop or /ship stop; one watch per session. Good fits are PRs with red checks or stuck in conflict loops, not ones in a design debate. Claude pushes at most 3 times per issue, then reports and escalates.",
+   "source_type": "article",
+   "tags": [
+    "/steward",
+    "pull requests",
+    "CI"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-6",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Turn repeated feedback into the right file",
+   "tip": "Code conventions go in CLAUDE.md (read by Claude Code, local /code-review, Code Review and PR Steward). PR review rules go in REVIEW.md (Code Review and PR Steward only, not local /code-review). How to start and exercise the app goes in .claude/skills/verify/SKILL.md. How PRs should be looked after goes in .claude/skills/steward/SKILL.md. The team's bar: a pattern must repeat on at least 2 PRs before it becomes a rule.",
+   "source_type": "article",
+   "tags": [
+    "CLAUDE.md",
+    "REVIEW.md",
+    "skills",
+    "verify"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-7",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Keep the steward skill out of the / menu",
+   "tip": "In .claude/skills/steward/SKILL.md, set user-invocable: false and disable-model-invocation: true so the house rules stay out of the / menu and out of skills Claude picks on its own. The local watch reads it from your working directory; PR Steward reads it from the default branch, so review edits to it like CI changes.",
+   "source_type": "article",
+   "tags": [
+    "skills",
+    "frontmatter",
+    "PR Steward"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125365668463993091-8",
+   "posted_at": "2026-11-24T23:07:17Z",
+   "author": "ClaudeDevs",
+   "date": "2026-11-24",
+   "topic": "Claude Code",
+   "subcategory": "PR review & shipping",
+   "title": "Start Claude Approvals in observe mode and keep the advisory line",
+   "tip": "Claude Approvals reads .claude/approvals.yml from the default branch. Start with mode: observe so it only reports what it would decide, and keep advisory: [claude/code_review] in rules: once a policy is on the default branch, Code Review only runs automatically on PRs matching a rule that names it. After the watch merges the base branch, the PR author should comment @claude approve.",
+   "source_type": "article",
+   "tags": [
+    "Claude Approvals",
+    "approvals.yml",
+    "observe mode"
+   ],
+   "source_url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "related_urls": [
+    "https://claude.dev/blog/the-work-after-you-open-a-pr/"
+   ],
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25",
+   "source_id": "x-2125365668463993091"
   }
  ],
  "sources": [
@@ -2501,6 +2978,88 @@
    "date": "2026-11-23",
    "added_at": "2026-11-24T04:55:33-07:00",
    "edition": "2026-11-24"
+  },
+  {
+   "type": "video",
+   "title": "Install Claude artifacts as desktop apps (beta)",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "28-second screen demo (watched): an artifact built from \"Build me an app that tracks every piece of space junk in orbit\" is installed with Install as app and opens in its own window from the dock, followed by a montage of other installed artifact apps. Beta in Claude for macOS & Windows.",
+   "id": "x-2125315491522650299",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2125315491522650299",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "video",
+   "title": "Build a desktop pet as an artifact app",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "26-second clip (watched): only shows the finished desktop pet app running on the desktop; the prompt is in the post text.",
+   "id": "x-2125341947179290938",
+   "author": "felixrieseberg",
+   "url": "https://x.com/felixrieseberg/status/2125341947179290938",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "video",
+   "title": "Claude Code 2.1.332 release highlights (unofficial changelog)",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "36-second animated release card (watched): 2.1.332 with 150 CLI changes and 1 prompt change; highlights: confirmation by default for risky or destructive actions, and MCP-hosted skills (beta) shown as server:skill in the / menu. Details in the thread.",
+   "id": "x-2125406441796206946",
+   "author": "ClaudeCodeLog",
+   "url": "https://x.com/ClaudeCodeLog/status/2125406441796206946",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "post",
+   "title": "MCP turns two: Skills over MCP and Tasks",
+   "id": "x-2125289794871963935",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2125289794871963935",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "video",
+   "title": "Skills over MCP on aitmpl.com",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "summary": "15-second animated flow (watched): Claude Code connects to the aitmpl MCP server, lists its 2 skills, loads component-review's SKILL.md over MCP when you call /aitmpl:component-review, and answers following it.",
+   "id": "x-2125346778585158026",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2125346778585158026",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "post",
+   "title": "MCP elicitations in Claude Code",
+   "id": "x-2125368426596065592",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2125368426596065592",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
+  },
+  {
+   "type": "article",
+   "title": "A practical guide to shipping with Claude Code (/code-review, /ship, /steward, Claude Ship)",
+   "id": "x-2125365668463993091",
+   "author": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+   "date": "2026-11-24",
+   "added_at": "2026-11-25T04:52:54-07:00",
+   "edition": "2026-11-25"
   }
  ],
  "schema_version": 2
