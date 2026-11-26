@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-25T04:52:54-07:00",
+ "last_run": "2026-11-26T05:00:31-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -94,6 +94,14 @@
    "window": "2026-11-24/2026-11-25",
    "tips_added": 21,
    "sources_added": 7,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26",
+   "window": "2026-11-25/2026-11-26",
+   "tips_added": 12,
+   "sources_added": 5,
    "source_summaries_updated": 0
   }
  ],
@@ -2481,6 +2489,292 @@
    "added_at": "2026-11-25T04:52:54-07:00",
    "edition": "2026-11-25",
    "source_id": "x-2125365668463993091"
+  },
+  {
+   "id": "x-2125768841779130868",
+   "posted_at": "2026-11-26T01:49:21Z",
+   "author": "dani_avila7",
+   "date": "2026-11-25",
+   "topic": "Claude Code",
+   "subcategory": "Hooks & guardrails",
+   "title": "Guard third-party skills with a PreSkillShellCommand hook",
+   "tip": "Skills can run shell commands at load time (lines such as !git status in SKILL.md), before Claude even reads their content. Install a PreSkillShellCommand hook such as dani_avila7's skill-shell-guard: Claude Code calls it as it loads the skill, safe commands like git status run, and unsafe ones like curl … | sh are blocked before Claude reads the skill. Set it up once to cover all your projects.",
+   "source_type": "post",
+   "tags": [
+    "hooks",
+    "PreSkillShellCommand",
+    "skills",
+    "security"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125768841779130868",
+   "related_urls": [
+    "https://x.com/dani_avila7/status/2125808011545595930"
+   ],
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26",
+   "source_id": "x-2125768841779130868"
+  },
+  {
+   "id": "x-2125609655493615757",
+   "posted_at": "2026-11-25T15:16:48Z",
+   "author": "dani_avila7",
+   "date": "2026-11-25",
+   "topic": "Claude API & platform",
+   "subcategory": "Managed Agents",
+   "title": "Learn Claude Managed Agents with a 7-module cookbook",
+   "tip": "Watch the ClaudeDevs conversation on how Claude Managed Agents works, then clone davila7/claude-managed-agents-cookbook and go through its 7 modules, from running a simple session to building Dynamic Workflows, before using CMA in your own projects.",
+   "source_type": "post",
+   "tags": [
+    "Managed Agents",
+    "cookbook",
+    "learning"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125609655493615757",
+   "related_urls": [
+    "https://github.com/davila7/claude-managed-agents-cookbook",
+    "https://x.com/ClaudeDevs/status/2125277263314792687"
+   ],
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26",
+   "source_id": "x-2125609655493615757"
+  },
+  {
+   "id": "x-2125705822265295140",
+   "posted_at": "2026-11-25T21:38:56Z",
+   "author": "dani_avila7",
+   "date": "2026-11-25",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Make claude plugin validate a blocking CI check",
+   "tip": "In dani_avila7's PR pipeline for the aitmpl repo, claude plugin validate is one of the blocking checks that can turn a PR red, alongside SkillSpector scoring on skills, typecheck, the API contract, version sync and CodeQL. AI reviewers (cubic, Greptile) only block through unresolved threads, and a PR gate auto-merges only when every check is green, no needs-human label or manual paths are involved, 5+ minutes have passed and no review threads are open.",
+   "source_type": "video",
+   "tags": [
+    "plugins",
+    "CI/CD",
+    "claude plugin validate",
+    "video"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2125705822265295140",
+   "video_timestamp": "0:05",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26",
+   "source_id": "x-2125705822265295140"
+  },
+  {
+   "id": "x-2125627317263466739",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "When tests can't define correct, use the old system as the oracle",
+   "tip": "For a migration Claude writes, a passing test suite isn't enough: Anthropic's Rust port passed about 98% of tests while only about a quarter of production inputs matched. Shadow real traffic through old and new code and compare. Because Claude's replies are nondeterministic, run the model once and replay that output to the new version, then compare every step before and after the model call.",
+   "source_type": "article",
+   "tags": [
+    "migration",
+    "shadowing",
+    "oracle",
+    "verification"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26",
+   "source_id": "x-2125627317263466739"
+  },
+  {
+   "id": "x-2125627317263466739-2",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "Audit tests that Claude ported along with the code",
+   "tip": "If Claude changes tests together with the code, a pass can mean the test was weakened. Auditing the ported tests in the Messages API migration turned up more than 100 weakened assertions, so review test diffs separately.",
+   "source_type": "article",
+   "tags": [
+    "tests",
+    "migration",
+    "review"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "source_id": "x-2125627317263466739",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627317263466739-3",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "Give each diff a checkpoint and fingerprint an agent can act on",
+   "tip": "Make the verifier's signal precise: compare results step by step (accept/reject, settings, prompt pieces) so the first step that differs shows where to look, and record a fingerprint (where the difference starts and the length difference) so one bug's records group together. Hand that small record to an agent to fix. Have a script group records every 10 to 30 minutes and alert a coordinating Claude agent only on a new kind, which assigns a worker agent and a Slack thread to it.",
+   "source_type": "article",
+   "tags": [
+    "agents",
+    "coordinator",
+    "fingerprint",
+    "verification"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "source_id": "x-2125627317263466739",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627317263466739-4",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "Fast inner loop in a sandbox, slower outer loop on real traffic",
+   "tip": "Give each agent a cloud sandbox with both codebases and local checks that take under a second (build the prompt both ways without calling the model; run outputs through a fake model). The agent writes a request that should reproduce the fingerprint, edits until both versions match, and adds a test that fails on the old code. Only after PR review does a fix go to the outer loop, where shadowed traffic shows whether the fingerprint is gone.",
+   "source_type": "article",
+   "tags": [
+    "sandbox",
+    "inner loop",
+    "agents"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "source_id": "x-2125627317263466739",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627317263466739-5",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Verification & security",
+   "subcategory": "Verification",
+   "title": "Keep human review at the seam: verifiers reward the cheapest match",
+   "tip": "A verifier can tell an agent whether outputs matched, not whether the fix is good. In the migration an agent copied a tool description into files to make prompts match instead of calling the real service; an engineer rejected it as throwaway code. Put engineers on reviewing proposed fixes and judging bug-vs-intended differences, not on every guess.",
+   "source_type": "article",
+   "tags": [
+    "human review",
+    "reward hacking",
+    "agents"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "source_id": "x-2125627317263466739",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627317263466739-6",
+   "posted_at": "2026-11-25T16:26:59Z",
+   "author": "AnthropicAI",
+   "date": "2026-11-25",
+   "topic": "Prompting & context",
+   "subcategory": "CLAUDE.md & instructions",
+   "title": "Turn review corrections into memory, CLAUDE.md rules and checks",
+   "tip": "So engineers never make the same correction twice, have agents save rejected approaches and the right fix as memory notes that later agents check. Have an agent group recurring review comments (about 60 in the migration) into proposed rules, which an engineer edits and approves for CLAUDE.md. Encode lasting lessons as tests, lints and merge checks.",
+   "source_type": "article",
+   "tags": [
+    "memory",
+    "CLAUDE.md",
+    "lints",
+    "review"
+   ],
+   "source_url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "related_urls": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ],
+   "credit": "Engineering blog by Lance Martin and team",
+   "source_id": "x-2125627317263466739",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "yt-wrfbI5eyLAI-1",
+   "posted_at": "2026-11-25T20:57:34Z",
+   "author": "RLanceMartin",
+   "date": "2026-11-25",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Subagents",
+   "title": "Run a large agent swarm on a minimal harness: a git repo and a shared database",
+   "tip": "For the Fermat's Last Theorem formalization, a 1,000-agent run used a minimal harness with no human steering: just a git repository for the work and a shared database for coordination. The lead agent created its own tables to run 999 helpers: Announce (global orders), Assign (who owns what), Notes (blockers and findings), Subtasks (shared to-do list) and Landed (verified, committed work).",
+   "source_type": "video",
+   "tags": [
+    "agent swarm",
+    "orchestration",
+    "lead agent",
+    "video"
+   ],
+   "source_url": "https://www.youtube.com/watch?v=wrfbI5eyLAI&t=150s",
+   "video_timestamp": "2:30",
+   "source_id": "yt-wrfbI5eyLAI",
+   "credit": "Talk by @RLanceMartin",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "yt-wrfbI5eyLAI-2",
+   "posted_at": "2026-11-25T20:57:34Z",
+   "author": "RLanceMartin",
+   "date": "2026-11-25",
+   "topic": "Prompting & context",
+   "subcategory": "Memory & dreaming",
+   "title": "Add an offline \"dreaming\" pass between sessions",
+   "tip": "Agents write memory myopically during a session. Between sessions, run Claude offline over the transcripts (a searchable event log) and its memory notes to compile them into structured memory representations such as wikis, then inject that memory into every new session.",
+   "source_type": "video",
+   "tags": [
+    "memory",
+    "dreaming",
+    "context",
+    "video"
+   ],
+   "source_url": "https://www.youtube.com/watch?v=wrfbI5eyLAI&t=770s",
+   "video_timestamp": "12:50",
+   "source_id": "yt-wrfbI5eyLAI",
+   "credit": "Talk by @RLanceMartin",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "yt-wrfbI5eyLAI-3",
+   "posted_at": "2026-11-25T20:57:34Z",
+   "author": "RLanceMartin",
+   "date": "2026-11-25",
+   "topic": "Prompting & context",
+   "subcategory": "Memory & dreaming",
+   "title": "Use dreaming to fix bad memories and fill wiki gaps",
+   "tip": "Have the dreaming pass review raw memory for false assumptions that made earlier sessions fail or loop, and rewrite those notes so the next session avoids the trap. A wiki plus a search tool beat a search tool alone, and a second pass that looks for missing entries and links fills gaps in the wiki.",
+   "source_type": "video",
+   "tags": [
+    "memory",
+    "dreaming",
+    "wiki",
+    "video"
+   ],
+   "source_url": "https://www.youtube.com/watch?v=wrfbI5eyLAI&t=836s",
+   "video_timestamp": "13:56",
+   "source_id": "yt-wrfbI5eyLAI",
+   "credit": "Talk by @RLanceMartin",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
   }
  ],
  "sources": [
@@ -3060,6 +3354,64 @@
    "date": "2026-11-24",
    "added_at": "2026-11-25T04:52:54-07:00",
    "edition": "2026-11-25"
+  },
+  {
+   "type": "post",
+   "title": "skill-shell-guard: block unsafe skill shell commands",
+   "id": "x-2125768841779130868",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2125768841779130868",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "type": "post",
+   "title": "Claude Managed Agents cookbook (7 modules)",
+   "id": "x-2125609655493615757",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2125609655493615757",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "type": "video",
+   "title": "aitmpl PR review pipeline for agent-generated code",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "duration_s": 29,
+   "summary": "29-second animated flowchart (watched): PR opened, welcome label and generated-files guard, blocking checks (including claude plugin validate), informational checks, cubic and Greptile reviews, a PR gate, then auto-merge or manual merge with daily triage.",
+   "id": "x-2125705822265295140",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2125705822265295140",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "type": "article",
+   "title": "Migrating the Messages API to Rust with verification loops for Claude agents",
+   "id": "x-2125627317263466739",
+   "author": "AnthropicAI",
+   "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "yt-wrfbI5eyLAI",
+   "url": "https://www.youtube.com/watch?v=wrfbI5eyLAI",
+   "type": "video",
+   "duration_s": 1123,
+   "summary_status": "done",
+   "has_local_copy": true,
+   "title": "1,000 Claude Agents Formalized Fermat's Last Theorem (Lance Martin, AI Engineer)",
+   "summary": "18:43 talk (watched): a 1,000-agent run formalizing Fermat's Last Theorem in Lean with a minimal harness (git repo plus shared database, lead agent coordinating 999 helpers through tables), then memory: agents write notes myopically, and an offline dreaming pass consolidates transcripts and notes into wikis, corrects bad memories and fills gaps.",
+   "author": "RLanceMartin",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:00:31-07:00",
+   "edition": "2026-11-26"
   }
  ],
  "schema_version": 2

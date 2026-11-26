@@ -5,8 +5,72 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-25T04:52:54-07:00</updated>
+  <updated>2026-11-26T05:00:31-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Claude Code › Hooks &amp; guardrails: skill-shell-guard: block unsafe skill shell commands</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125768841779130868"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2125768841779130868"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2125768841779130868</id>
+    <published>2026-11-26T01:49:21Z</published>
+    <updated>2026-11-26T05:00:31-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Guard third-party skills with a PreSkillShellCommand hook: Skills can run shell commands at load time (lines such as !git status in SKILL.md), before Claude even reads their content. Install a PreSkillShellCommand hook such as dani_avila7&#x27;s skill-shell-guard: Claude Code calls it as it loads the skill, safe commands like git status run, and unsafe ones like curl … | sh are blocked before Claude reads the skill. Set it up once to cover all your projects. (Source: https://x.com/dani_avila7/status/2125768841779130868)</summary>
+  </entry>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Plugins, MCP &amp; marketplace: aitmpl PR review pipeline for agent-generated code</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125705822265295140"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2125705822265295140"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2125705822265295140</id>
+    <published>2026-11-25T21:38:56Z</published>
+    <updated>2026-11-26T05:00:31-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>29-second animated flowchart (watched): PR opened, welcome label and generated-files guard, blocking checks (including claude plugin validate), informational checks, cubic and Greptile reviews, a PR gate, then auto-merge or manual merge with daily triage.
+• 0:05 Make claude plugin validate a blocking CI check: In dani_avila7&#x27;s PR pipeline for the aitmpl repo, claude plugin validate is one of the blocking checks that can turn a PR red, alongside SkillSpector scoring on skills, typecheck, the API contract, version sync and CodeQL. AI reviewers (cubic, Greptile) only block through unresolved threads, and a PR gate auto-merges only when every check is green, no needs-human label or manual paths are involved, 5+ minutes have passed and no review threads are open. (Source: https://x.com/dani_avila7/status/2125705822265295140)</summary>
+  </entry>
+  <entry>
+    <title>Prompting &amp; context › Memory &amp; dreaming: 1,000 Claude Agents Formalized Fermat&#x27;s Last Theorem (Lance Martin, AI Engineer)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-yt-wrfbI5eyLAI"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=wrfbI5eyLAI"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-yt-wrfbI5eyLAI</id>
+    <published>2026-11-25T20:57:34Z</published>
+    <updated>2026-11-26T05:00:31-07:00</updated>
+    <author><name>@RLanceMartin</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>18:43 talk (watched): a 1,000-agent run formalizing Fermat&#x27;s Last Theorem in Lean with a minimal harness (git repo plus shared database, lead agent coordinating 999 helpers through tables), then memory: agents write notes myopically, and an offline dreaming pass consolidates transcripts and notes into wikis, corrects bad memories and fills gaps.
+• 2:30 Run a large agent swarm on a minimal harness: a git repo and a shared database: For the Fermat&#x27;s Last Theorem formalization, a 1,000-agent run used a minimal harness with no human steering: just a git repository for the work and a shared database for coordination. The lead agent created its own tables to run 999 helpers: Announce (global orders), Assign (who owns what), Notes (blockers and findings), Subtasks (shared to-do list) and Landed (verified, committed work).
+• 12:50 Add an offline &quot;dreaming&quot; pass between sessions: Agents write memory myopically during a session. Between sessions, run Claude offline over the transcripts (a searchable event log) and its memory notes to compile them into structured memory representations such as wikis, then inject that memory into every new session.
+• 13:56 Use dreaming to fix bad memories and fill wiki gaps: Have the dreaming pass review raw memory for false assumptions that made earlier sessions fail or loop, and rewrite those notes so the next session avoids the trap. A wiki plus a search tool beat a search tool alone, and a second pass that looks for missing entries and links fills gaps in the wiki. (Source: https://www.youtube.com/watch?v=wrfbI5eyLAI)</summary>
+  </entry>
+  <entry>
+    <title>Verification &amp; security › Verification: Migrating the Messages API to Rust with verification loops for Claude agents</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125627317263466739"/>
+    <link rel="related" href="https://x.com/AnthropicAI/status/2125627317263466739"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2125627317263466739</id>
+    <published>2026-11-25T16:26:59Z</published>
+    <updated>2026-11-26T05:00:31-07:00</updated>
+    <author><name>@AnthropicAI</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• When tests can&#x27;t define correct, use the old system as the oracle: For a migration Claude writes, a passing test suite isn&#x27;t enough: Anthropic&#x27;s Rust port passed about 98% of tests while only about a quarter of production inputs matched. Shadow real traffic through old and new code and compare. Because Claude&#x27;s replies are nondeterministic, run the model once and replay that output to the new version, then compare every step before and after the model call.
+• Audit tests that Claude ported along with the code: If Claude changes tests together with the code, a pass can mean the test was weakened. Auditing the ported tests in the Messages API migration turned up more than 100 weakened assertions, so review test diffs separately.
+• Give each diff a checkpoint and fingerprint an agent can act on: Make the verifier&#x27;s signal precise: compare results step by step (accept/reject, settings, prompt pieces) so the first step that differs shows where to look, and record a fingerprint (where the difference starts and the length difference) so one bug&#x27;s records group together. Hand that small record to an agent to fix. Have a script group records every 10 to 30 minutes and alert a coordinating Claude agent only on a new kind, which assigns a worker agent and a Slack thread to it.
+• Fast inner loop in a sandbox, slower outer loop on real traffic: Give each agent a cloud sandbox with both codebases and local checks that take under a second (build the prompt both ways without calling the model; run outputs through a fake model). The agent writes a request that should reproduce the fingerprint, edits until both versions match, and adds a test that fails on the old code. Only after PR review does a fix go to the outer loop, where shadowed traffic shows whether the fingerprint is gone.
+• Keep human review at the seam: verifiers reward the cheapest match: A verifier can tell an agent whether outputs matched, not whether the fix is good. In the migration an agent copied a tool description into files to make prompts match instead of calling the real service; an engineer rejected it as throwaway code. Put engineers on reviewing proposed fixes and judging bug-vs-intended differences, not on every guess.
+• Turn review corrections into memory, CLAUDE.md rules and checks: So engineers never make the same correction twice, have agents save rejected approaches and the right fix as memory notes that later agents check. Have an agent group recurring review comments (about 60 in the migration) into proposed rules, which an engineer edits and approves for CLAUDE.md. Encode lasting lessons as tests, lints and merge checks. (Source: https://x.com/AnthropicAI/status/2125627317263466739)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Managed Agents: Claude Managed Agents cookbook (7 modules)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125609655493615757"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2125609655493615757"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2125609655493615757</id>
+    <published>2026-11-25T15:16:48Z</published>
+    <updated>2026-11-26T05:00:31-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Learn Claude Managed Agents with a 7-module cookbook: Watch the ClaudeDevs conversation on how Claude Managed Agents works, then clone davila7/claude-managed-agents-cookbook and go through its 7 modules, from running a simple session to building Dynamic Workflows, before using CMA in your own projects. (Source: https://x.com/dani_avila7/status/2125609655493615757)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Releases &amp; changelog: Claude Code 2.1.332 release highlights (unofficial changelog)</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125406441796206946"/>
