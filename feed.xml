@@ -5,8 +5,42 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/claude-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/"/>
   <id>https://cfmayer.github.io/claude-tips-watch/</id>
-  <updated>2026-11-26T05:00:31-07:00</updated>
+  <updated>2026-11-27T04:57:35-07:00</updated>
   <author><name>Claude Tips Watch</name></author>
+  <entry>
+    <title>Subagents, skills &amp; plugins › Plugins, MCP &amp; marketplace: MCP vs WebMCP comparison</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2126124694877216986"/>
+    <link rel="related" href="https://x.com/dani_avila7/status/2126124694877216986"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2126124694877216986</id>
+    <published>2026-11-27T01:23:23Z</published>
+    <updated>2026-11-27T04:57:35-07:00</updated>
+    <author><name>@dani_avila7</name></author>
+    <category term="edition-2026-11-27"/>
+    <summary>• Choose MCP for backend access, WebMCP for in-page tools: Per the Chrome for Developers comparison dani_avila7 shared: MCP servers expose tools, resources and prompts from a server, use their own credentials and are available whenever the server is up, which suits background tasks and data access. WebMCP is a JavaScript API through which a web page registers tools while it&#x27;s open, running in the page with the user&#x27;s current session, which suits in-context web actions, client-side session integrations and web automation. (Source: https://x.com/dani_avila7/status/2126124694877216986)</summary>
+  </entry>
+  <entry>
+    <title>Claude apps › Desktop apps &amp; artifacts: Kids&#x27; leaf-blower game built with Claude</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2126008112033534392"/>
+    <link rel="related" href="https://x.com/felixrieseberg/status/2126008112033534392"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2126008112033534392</id>
+    <published>2026-11-26T17:40:07Z</published>
+    <updated>2026-11-27T04:57:35-07:00</updated>
+    <author><name>@felixrieseberg</name></author>
+    <category term="edition-2026-11-27"/>
+    <summary>24-second gameplay clip (watched): the leaf-blower game running as a native macOS app (&quot;Leaf Blower&quot; in the menu bar), clearing leaves off the desktop, then an end-of-day upgrade shop. It shows the finished game only, not the Claude chat or dictation steps.
+• 0:00 Let kids dictate a game idea into Claude and build it as an artifact: Ask a kid what game they&#x27;d like, have them dictate the idea straight into Claude, and build it as an artifact. Felix Rieseberg&#x27;s leaf-blower game this way runs best as a desktop app, and the same artifact also plays in the browser. (Source: https://x.com/felixrieseberg/status/2126008112033534392)</summary>
+  </entry>
+  <entry>
+    <title>Claude API &amp; platform › Auth &amp; billing: Monthly API credits on Max and Team plans</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125999147719524580"/>
+    <link rel="related" href="https://x.com/adocomplete/status/2125999147719524580"/>
+    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2125999147719524580</id>
+    <published>2026-11-26T17:04:30Z</published>
+    <updated>2026-11-27T04:57:35-07:00</updated>
+    <author><name>@adocomplete</name></author>
+    <category term="edition-2026-11-27"/>
+    <summary>• Claim the monthly API credits included with Max and Team plans: A Claude Max or Team plan also comes with monthly API credits: $100 on Max 5x, $200 on Max 20x, and up to $500 for Teams. They don&#x27;t roll over, so claim and use them each month. (Source: https://x.com/adocomplete/status/2125999147719524580)</summary>
+  </entry>
   <entry>
     <title>Claude Code › Hooks &amp; guardrails: skill-shell-guard: block unsafe skill shell commands</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2125768841779130868"/>
@@ -717,16 +751,5 @@
     <author><name>@claudeai</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• Add Claude to your video calls: Claude Meetings adds Claude to your team&#x27;s video call, where it builds docs, whiteboards and other artifacts with you while you are still talking. Rolling out in beta on Team and Enterprise plans. (Source: https://x.com/claudeai/status/2120973994191094179)</summary>
-  </entry>
-  <entry>
-    <title>Claude API &amp; platform › Managed Agents: Self-host Claude Managed Agents</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/claude-tips-watch/#s-x-2120938988165091693"/>
-    <link rel="related" href="https://x.com/ClaudeDevs/status/2120938988165091693"/>
-    <id>https://cfmayer.github.io/claude-tips-watch/#s-x-2120938988165091693</id>
-    <published>2026-11-12T17:57:14Z</published>
-    <updated>2026-11-19T21:51:19-07:00</updated>
-    <author><name>@ClaudeDevs</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Self-host Claude Managed Agents: Self-hosted Claude Managed Agents is in private beta: host the agent harness, sandboxes and session history in your own cloud or on-premises, and choose where requests to Claude are sent. (Source: https://x.com/ClaudeDevs/status/2120938988165091693)</summary>
   </entry>
 </feed>

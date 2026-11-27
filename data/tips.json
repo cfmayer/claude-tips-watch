@@ -8,7 +8,7 @@
   "keep_rule": "Claude and Anthropic-tooling",
   "scope_note": "Only Claude and Anthropic tooling is covered here. Tips about ChatGPT, Codex or other AI tools are left out, even when they come from the same accounts; a tip about a tool that works with several agents is included only when it names Claude or Claude Code."
  },
- "last_run": "2026-11-26T05:00:31-07:00",
+ "last_run": "2026-11-27T04:57:35-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -102,6 +102,14 @@
    "window": "2026-11-25/2026-11-26",
    "tips_added": 12,
    "sources_added": 5,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27",
+   "window": "2026-11-26/2026-11-27",
+   "tips_added": 3,
+   "sources_added": 3,
    "source_summaries_updated": 0
   }
  ],
@@ -2775,6 +2783,76 @@
    "credit": "Talk by @RLanceMartin",
    "added_at": "2026-11-26T05:00:31-07:00",
    "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125999147719524580",
+   "posted_at": "2026-11-26T17:04:30Z",
+   "author": "adocomplete",
+   "date": "2026-11-26",
+   "topic": "Claude API & platform",
+   "subcategory": "Auth & billing",
+   "title": "Claim the monthly API credits included with Max and Team plans",
+   "tip": "A Claude Max or Team plan also comes with monthly API credits: $100 on Max 5x, $200 on Max 20x, and up to $500 for Teams. They don't roll over, so claim and use them each month.",
+   "source_type": "post",
+   "tags": [
+    "API credits",
+    "Max plan",
+    "Team plan",
+    "billing"
+   ],
+   "source_url": "https://x.com/adocomplete/status/2125999147719524580",
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27",
+   "source_id": "x-2125999147719524580"
+  },
+  {
+   "id": "x-2126008112033534392",
+   "posted_at": "2026-11-26T17:40:07Z",
+   "author": "felixrieseberg",
+   "date": "2026-11-26",
+   "topic": "Claude apps",
+   "subcategory": "Desktop apps & artifacts",
+   "title": "Let kids dictate a game idea into Claude and build it as an artifact",
+   "tip": "Ask a kid what game they'd like, have them dictate the idea straight into Claude, and build it as an artifact. Felix Rieseberg's leaf-blower game this way runs best as a desktop app, and the same artifact also plays in the browser.",
+   "source_type": "video",
+   "tags": [
+    "artifacts",
+    "dictation",
+    "games",
+    "desktop app",
+    "video"
+   ],
+   "source_url": "https://x.com/felixrieseberg/status/2126008112033534392",
+   "video_timestamp": "0:00",
+   "related_urls": [
+    "https://claude.ai/artifact/W45hzJe83bsMDFq8iJCp3y"
+   ],
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27",
+   "source_id": "x-2126008112033534392"
+  },
+  {
+   "id": "x-2126124694877216986",
+   "posted_at": "2026-11-27T01:23:23Z",
+   "author": "dani_avila7",
+   "date": "2026-11-26",
+   "topic": "Subagents, skills & plugins",
+   "subcategory": "Plugins, MCP & marketplace",
+   "title": "Choose MCP for backend access, WebMCP for in-page tools",
+   "tip": "Per the Chrome for Developers comparison dani_avila7 shared: MCP servers expose tools, resources and prompts from a server, use their own credentials and are available whenever the server is up, which suits background tasks and data access. WebMCP is a JavaScript API through which a web page registers tools while it's open, running in the page with the user's current session, which suits in-context web actions, client-side session integrations and web automation.",
+   "source_type": "post",
+   "tags": [
+    "MCP",
+    "WebMCP",
+    "comparison"
+   ],
+   "source_url": "https://x.com/dani_avila7/status/2126124694877216986",
+   "related_urls": [
+    "https://aitmpl.com"
+   ],
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27",
+   "source_id": "x-2126124694877216986"
   }
  ],
  "sources": [
@@ -3412,6 +3490,40 @@
    "date": "2026-11-25",
    "added_at": "2026-11-26T05:00:31-07:00",
    "edition": "2026-11-26"
+  },
+  {
+   "type": "post",
+   "title": "Monthly API credits on Max and Team plans",
+   "id": "x-2125999147719524580",
+   "author": "adocomplete",
+   "url": "https://x.com/adocomplete/status/2125999147719524580",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27"
+  },
+  {
+   "type": "video",
+   "title": "Kids' leaf-blower game built with Claude",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "duration_s": 24,
+   "summary": "24-second gameplay clip (watched): the leaf-blower game running as a native macOS app (\"Leaf Blower\" in the menu bar), clearing leaves off the desktop, then an end-of-day upgrade shop. It shows the finished game only, not the Claude chat or dictation steps.",
+   "id": "x-2126008112033534392",
+   "author": "felixrieseberg",
+   "url": "https://x.com/felixrieseberg/status/2126008112033534392",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27"
+  },
+  {
+   "type": "post",
+   "title": "MCP vs WebMCP comparison",
+   "id": "x-2126124694877216986",
+   "author": "dani_avila7",
+   "url": "https://x.com/dani_avila7/status/2126124694877216986",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T04:57:35-07:00",
+   "edition": "2026-11-27"
   }
  ],
  "schema_version": 2
